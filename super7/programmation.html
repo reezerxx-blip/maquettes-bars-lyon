@@ -3,14 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Programmation | Super7, Lyon 7e (maquette)</title>
-<meta name="description" content="Programmation du Super7 à Lyon : exemple de semaine du jeudi au dimanche, avec le bar et le club. Maquette de refonte non officielle.">
+<title>Programmation | Super7, bar et club, Lyon 7e (maquette)</title>
+<meta name="description" content="Programmation du Super7 à Lyon 7e : exemple de semaine du jeudi au dimanche, artistes du bar et du club. Maquette non officielle.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#1a0808">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Programmation | Super7, Lyon 7e (maquette)">
-<meta property="og:description" content="Programmation du Super7 à Lyon : exemple de semaine du jeudi au dimanche, avec le bar et le club. Maquette de refonte non officielle.">
-<meta property="og:image" content="images/og.png">
+<meta property="og:title" content="Programmation | Super7, bar et club, Lyon 7e (maquette)">
+<meta property="og:description" content="Programmation du Super7 à Lyon 7e : exemple de semaine du jeudi au dimanche, artistes du bar et du club. Maquette non officielle.">
+<meta property="og:image" content="images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Le bar du Super7 vu d'en haut, avec sa boule à facettes.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Programmation | Super7, bar et club, Lyon 7e (maquette)">
+<meta name="twitter:description" content="Programmation du Super7 à Lyon 7e : exemple de semaine du jeudi au dimanche, artistes du bar et du club. Maquette non officielle.">
+<meta name="twitter:image" content="images/og.jpg">
 <meta property="og:locale" content="fr_FR">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/super7-pixel.woff2" as="font" type="font/woff2" crossorigin>
@@ -18,7 +25,7 @@
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/motion.css">
-<script>document.documentElement.classList.add("js");</script>
+<noscript><style>.seg,.seg-status,.rail-ctrl{display:none}</style></noscript>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -58,12 +65,12 @@
         <h2 class="px" id="titre-sem">Jeu 15 / Dim 18 oct.</h2>
         <p class="label">Super7, lieu de vie et club</p>
       </div>
-      <div class="seg" role="group" aria-label="Filtrer la programmation" hidden>
+      <div class="seg" role="group" aria-label="Filtrer la programmation">
         <button type="button" data-filter="all" aria-pressed="true">Tout</button>
         <button type="button" data-filter="bar" aria-pressed="false">Bar</button>
         <button type="button" data-filter="club" aria-pressed="false">Club</button>
       </div>
-      <p class="seg-status label" id="seg-status" aria-live="polite" hidden>Affichage : bar et club</p>
+      <p class="seg-status label" id="seg-status" aria-live="polite">Affichage : bar et club</p>
       <ol class="week">
         <li class="dcol rv">
           <h3 class="dcol-head"><span class="dow px">Jeu</span><span class="num px">15</span><span class="mon label">oct.</span></h3>
@@ -93,6 +100,27 @@
   <div class="ticker ticker--big" aria-hidden="true"><div class="ticker-track"><div class="ticker-group px"><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span></div><div class="ticker-group px"><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span></div></div></div>
   <div class="ticker ticker--big ticker--club ticker--rev" aria-hidden="true"><div class="ticker-track"><div class="ticker-group px"><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span></div><div class="ticker-group px"><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span></div></div></div>
 
+  <section class="bleed bleed--stage" aria-label="Les briques de verre rouges du club">
+    <div class="bleed-media"><img src="images/photos/briques-rouges-club-800.webp" srcset="images/photos/briques-rouges-club-480.webp 480w, images/photos/briques-rouges-club-800.webp 800w, images/photos/briques-rouges-club-1200.webp 1200w, images/photos/briques-rouges-club-1600.webp 1600w" sizes="(min-width: 900px) 100vw, 60vw" width="800" height="1000" alt="Mur de briques de verre éclairé en rouge et porte vitrée rouge, dans la pénombre du club." style="object-position:40% 45%" loading="lazy" decoding="async" data-par="80"></div>
+    <div class="bleed-cap wrap"><p class="px">Club</p><p class="label">Jeudi à dimanche, 17h à 01h</p></div>
+  </section>
+
+  <section class="section t-soiree concrete" aria-labelledby="titre-affiches" style="padding-top:var(--s-7)">
+    <div class="wrap">
+      <div class="section-head"><p class="label rv">Archives</p><h2 class="px rv-px" id="titre-affiches">Affiches précédentes</h2></div>
+      <div class="posters">
+        <figure class="poster-fig">
+          <img src="images/photos/affiche-8-11-oct-800.webp" srcset="images/photos/affiche-8-11-oct-480.webp 480w, images/photos/affiche-8-11-oct-800.webp 800w, images/photos/affiche-8-11-oct-1200.webp 1200w, images/photos/affiche-8-11-oct-1600.webp 1600w" sizes="(min-width: 700px) 300px, 44vw" width="800" height="1000" alt="Affiche du 8 au 11 octobre : titres en pixel orange et noms des artistes du bar et du club, jour par jour." loading="lazy" decoding="async">
+          <figcaption class="label">8 au 11 oct., affiche @super7_lyon (Instagram)</figcaption>
+        </figure>
+        <figure class="poster-fig">
+          <img src="images/photos/affiche-1-4-oct-800.webp" srcset="images/photos/affiche-1-4-oct-480.webp 480w, images/photos/affiche-1-4-oct-800.webp 800w, images/photos/affiche-1-4-oct-1200.webp 1200w, images/photos/affiche-1-4-oct-1600.webp 1600w" sizes="(min-width: 700px) 300px, 44vw" width="800" height="1000" alt="Affiche du 1er au 4 octobre : titres en pixel orange et noms des artistes du bar et du club, jour par jour." loading="lazy" decoding="async">
+          <figcaption class="label">1er au 4 oct., affiche @super7_lyon (Instagram)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <section class="section t-profonde" aria-labelledby="titre-entree">
     <div class="wrap">
       <h2 class="px" id="titre-entree" style="font-size:var(--step-3);color:var(--accent);margin-bottom:var(--s-4)">Entrée et billetterie</h2>
@@ -119,10 +147,14 @@
       </nav>
     </div>
     <p class="legal">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.</p>
-    <p class="legal legal--credit">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar.</p>
+    <p class="legal legal--credit">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux du bar.</p>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+<nav class="dock" aria-label="Actions rapides">
+  <a href="programmation.html" aria-current="page">Programmation</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=40%20rue%20Saint-J%C3%A9r%C3%B4me%2069007%20Lyon" rel="noopener" target="_blank">Itinéraire<span class="sr-only"> (nouvel onglet)</span></a>
+  <a href="https://www.instagram.com/super7_lyon/" rel="noopener" target="_blank">Instagram<span class="sr-only"> (nouvel onglet)</span></a>
+</nav>
 <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -28,13 +28,14 @@
 
   /* Accent */
   --orange: #ff4a14;
-  --orange-jour: #b83a06;
+  --orange-jour: #b83a06;`n  --orange-texte: #8f2d03; /* petit texte orange sur béton : 5,3:1 */
 
   /* Rôles (thème jour par défaut) */
   --bg: var(--beton);
   --fg: var(--encre);
   --muted: #4a3a30;
   --accent: var(--orange-jour);
+  --accent-text: var(--orange-texte);
   --line: rgba(36, 22, 15, 0.35);
 
   /* Typographie */
@@ -42,9 +43,9 @@
   --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --step--1: 0.8125rem;
   --step-0: 1.0625rem;
-  --step-1: 1.4rem;
-  --step-2: 1.9rem;
-  --step-3: 2.5rem;
+  --step-1: clamp(1.2rem, 1.08rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.55rem, 1.25rem + 1.2vw, 1.9rem);
+  --step-3: clamp(1.9rem, 1.4rem + 2.1vw, 2.5rem);
   --step-4: clamp(2.5rem, 7vw, 4.5rem);
   --step-5: clamp(3.25rem, 11vw, 8rem);
   --step-giant: clamp(5rem, 31vw, 22rem);
@@ -79,9 +80,10 @@
 }
 
 /* Thèmes par section */
-.t-jour { --bg: var(--beton); --fg: var(--encre); --muted: #4a3a30; --accent: var(--orange-jour); --line: rgba(36, 22, 15, 0.35); }
-.t-soiree { --bg: var(--brun); --fg: var(--sable); --muted: #bdb2a2; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
-.t-nuit { --bg: var(--nuit); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
-.t-profonde { --bg: var(--nuit-2); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+.t-jour { --bg: var(--beton); --fg: var(--encre); --muted: #4a3a30; --accent: var(--orange-jour); --accent-text: var(--orange-texte); --line: rgba(36, 22, 15, 0.35); }
+.t-soiree { --accent-text: var(--orange); --bg: var(--brun); --fg: var(--sable); --muted: #bdb2a2; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+.t-nuit { --accent-text: var(--orange); --bg: var(--nuit); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+.t-profonde { --accent-text: var(--orange); --bg: var(--nuit-2); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+
 
 

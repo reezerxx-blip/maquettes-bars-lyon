@@ -1,27 +1,36 @@
-﻿/* Mouvement : transform, opacity, clip-path par pas. Tout reste visible sans JS. */
-.js .hero-title .ch { opacity: 0; }
-.js .hero-title.is-shown .ch { opacity: 1; }
+/* Mouvement : transform, opacity, clip-path par pas. Le contenu est visible par défaut :
+   rien n'est masqué tant que main.js n'a pas posé la classe .motion (et seulement sous l'écran). */
 
-/* Révélation douce */
-.js .rv { opacity: 0; transform: translateY(16px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
-.js .rv.is-in { opacity: 1; transform: none; }
+/* Titre du hero : lettres allumées par pas, en CSS pur (aucune dépendance JS, aucun masquage préalable) */
+@keyframes lit { from { opacity: 0; } to { opacity: 1; } }
+.hero-title .ch { animation: lit 420ms steps(3, end) both; }
+.hero-title .ch:nth-child(2) { animation-delay: 0ms; }
+.hero-title .ch:nth-child(3) { animation-delay: 140ms; }
+.hero-title .ch:nth-child(4) { animation-delay: 280ms; }
+.hero-title .ch:nth-child(5) { animation-delay: 420ms; }
+.hero-title .ch:nth-child(6) { animation-delay: 560ms; }
+.hero-title .ch:nth-child(7) { animation-delay: 700ms; }
+.wallwrap .badge { animation: lit 500ms steps(4, end) 900ms both; }
+
+/* Révélation douce (uniquement pour les blocs situés sous l'écran au chargement) */
+.motion .rv { opacity: 0; transform: translateY(16px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
+.motion .rv.is-in { opacity: 1; transform: none; }
 
 /* Révélation par pas pixelisés (balayage horizontal par crans) */
-.js .rv-px { clip-path: inset(-10% 100% -10% -2%); transition: clip-path 640ms steps(12, end); }
-.js .rv-px.is-in { clip-path: inset(-10% -100vw -10% -2%); }
-
-.js .badge-stamp { opacity: 0; }
+.motion .rv-px { clip-path: inset(-10% calc(100% - 2px) -10% -2%); transition: clip-path 640ms steps(12, end); }
+.motion .rv-px.is-in { clip-path: inset(-10% -100vw -10% -2%); }
 
 @media (prefers-reduced-motion: reduce) {
-  .js .hero-title .ch { opacity: 1; }
-  .js .rv { opacity: 1; transform: none; transition: none; }
-  .js .rv-px, .js .rv-px.is-in { clip-path: none; transition: none; }
+  .hero-title .ch, .wallwrap .badge { animation: none; }
+  .motion .rv { opacity: 1; transform: none; transition: none; }
+  .motion .rv-px, .motion .rv-px.is-in { clip-path: none; transition: none; }
   .ticker-track { animation: none; width: auto; transform: none; }
   .ticker-group { flex-wrap: wrap; white-space: normal; padding-right: 0; padding-inline: var(--gutter); }
   .ticker-group[aria-hidden="true"] { display: none; }
-  .btn, .btn::before, .btn svg, .site-nav a, .space, .pcard, .ph-img img, .space-media img, .wall-img, .insta, .insta::before, .seg button, .seg button::before, .affiche-bricks, .cols li, .slow-cols li, .lineup li { transition: none; }
+  .btn, .btn::before, .btn svg, .site-nav a, .space, .pcard, .ph-img img, .space-media img, .wall-img, .insta, .insta::before, .seg button, .seg button::before, .affiche-bricks, .cols li, .slow-cols li, .lineup li, .duo-img img, .duo-img::after, .dock a { transition: none; }
   .slot.is-swap p { animation: none; }
   .beam { will-change: auto; }
+  .rail { scroll-behavior: auto; }
 }
 
 /* Transition entre pages (navigateurs compatibles, sinon navigation normale) */
@@ -29,3 +38,4 @@
   @view-transition { navigation: auto; }
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--dur-medium); animation-timing-function: var(--ease-out); }
 }
+

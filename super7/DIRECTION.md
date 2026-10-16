@@ -1,4 +1,4 @@
-﻿# Direction artistique : Super7 (maquette non officielle)
+# Direction artistique : Super7 (maquette non officielle)
 
 Rédigée avant le code. Maquette de refonte réalisée par Olivier Ruminski. Contenus © Super7.
 
@@ -58,7 +58,7 @@ Le fond clair impose un orange légèrement plus profond pour tenir le contraste
 
 ## Images
 
-Aucune photo disponible hors Instagram (non téléchargeable). Aucune image IA, aucune photo de stock, rien de tiers. Visuels créés à la main : briques de verre (SVG), béton et grain (SVG feTurbulence), tramage pixel (SVG généré), monogrammes S7 (SVG). Les emplacements photo sont des cadres de viseur soignés.
+Aucune image IA, aucune photo de stock, rien de tiers. Visuels créés à la main : briques de verre (SVG), béton et grain (SVG feTurbulence), tramage pixel (SVG généré), monogrammes S7 (SVG). Les emplacements photo sont des cadres de viseur soignés.
 
 ## Mouvement (performant : transform, opacity, clip-path par pas ; reduced-motion respecté)
 
@@ -99,3 +99,13 @@ Voir INSTAGRAM-ANALYSE.md. Conséquences sur la direction :
 - **Photos réelles du compte (6)**, utilisées en grand : hero (bar), bandeau plein écran à parallaxe douce (entrée de nuit), cartes du lieu, planche contact (tous les clichés), bandeau de la page Infos. Cadrages sans gros plan sur des visages. Duotone orange au survol. Les photos sont en 512 px de large : douces en grand format, le grain global aide, à remplacer par les originaux haute définition.
 - **Section « Le lieu » riche en photos** et **line-up du slow opening** (16 noms vus sur l'affiche Instagram, « 17h, 01h, gratuit »).
 - Ton : encore plus sobre, presque sans phrases. Crédit photo visible en pied de page et sur Infos.
+
+## Mise à jour v3 : photos HD et mobile d'abord
+
+La direction ne change pas (17h à 01h, pixel orange, béton, brun, rouge, scanlines). Ce qui change :
+
+- **Photos** : 12 photos HD du compte Instagram et 3 originaux basse définition (petits cadres), placées selon PHOTOS-ANALYSE.md. Hero : le bar vu d'en haut avec la boule à facettes. Cartes : terrasse (rideau jaune, clôture), bar (comptoir), club (briques rouges). Bandeaux plein écran : façade et verrière, briques rouges (Programmation). Club : foule sous les faisceaux plein cadre, cabine DJ en petit cadre. Affiches : visuels de programmation uniquement.
+- **Mobile d'abord** : hero entier dans le premier écran (svh), image au centre, CTA visibles ; barre d'actions fixe en bas (Programmation, Itinéraire, Instagram) ; cartes de la semaine en défilement horizontal avec accroche de la carte suivante, indication « Faire glisser » et fondu de bord ; planche contact en 2 colonnes ; typographie fluide (clamp) ; parallaxe et lumière des briques réservées au grand écran avec souris.
+- **Chargement** : tout le contenu est visible par défaut ; seuls les blocs sous l'écran sont dévoilés au défilement (classe `.motion` posée par main.js) ; lettres du titre allumées en CSS pur ; filtre Bar / Club et boutons visibles dès le départ (masqués seulement sans JS).
+- **Contraste** : variante foncée de l'orange (#8F2D03, 5,3:1 sur béton) pour le petit texte.
+- **SEO** : title et description uniques, og:image et twitter:image 1200 x 630, JSON-LD NightClub sur l'accueil, noindex conservé.

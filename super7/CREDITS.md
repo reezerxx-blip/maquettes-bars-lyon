@@ -1,4 +1,4 @@
-﻿# Crédits
+# Crédits
 
 Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.
 
@@ -11,7 +11,7 @@ Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus ©
 
 ## Bibliothèques
 
-- GSAP cœur 3.15 (licence Standard gratuite GreenSock), chargé depuis `https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js` (URL vérifiée dans le skill web-pro-toolkit). Facultatif : sans lui, le hero s'affiche d'emblée.
+- GSAP cœur 3.15.0 (licence Standard gratuite GreenSock), copie locale `js/gsap.min.js` (identique à celle de la maquette lelyons, bannière 3.15.0 vérifiée). Chargé seulement sur grand écran avec souris, pour un effet décoratif ; le site n'en dépend pas.
 - Non utilisés : ScrollTrigger (URL CDN non vérifiée), Lenis, Open Props (le défilement natif et des tokens maison suffisent), React, shadcn, radix-ui, heroicons, iconify.
 
 ## Assets créés à la main (aucune source tierce)
@@ -22,7 +22,7 @@ Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus ©
 - `images/s7-ton-jour.svg`, `s7-ton-nuit.svg`, `s7-ton-brun.svg` : variantes tonales du S7 (graphisme).
 - `images/grain.svg` : grain fin (feTurbulence). `images/dither-*.svg` : bandes de tramage de Bayer générées par script.
 - Effet de balayage des titres : masque CSS, aucun fichier.
-- `images/og.png` : image de partage générée par script avec la police pixel.
+- `images/og.jpg` : image de partage 1200 x 630, recadrage de la photo HD du bar vu d'en haut (Instagram @super7_lyon).
 - Icônes : flèches en pixels dessinées en SVG inline (un seul jeu, style unique).
 
 ## Inspiration
@@ -31,9 +31,13 @@ Catalogue 21st.dev, recherche « marquee ticker » : principe du bandeau défila
 
 ## Photos
 
-6 photos du compte Instagram @super7_lyon, fournies par le client et reprises telles quelles (JPG de 480 à 512 px de large, aucun service tiers) pour cette maquette. Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar. Fichiers : `images/photos/bar-interieur.jpg`, `etagere-enceinte.jpg`, `briques-rouges.jpg`, `entree-nuit.jpg`, `club-foule.jpg`, `mur-arche.jpg`. Crédit visible en pied de page et sur la page Infos.
+Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux du bar.
+
+- 12 photos HD (1364 à 3277 px) téléchargées du compte Instagram @super7_lyon (3 affiches et 9 photos retenues), voir PHOTOS-ANALYSE.md pour l'inventaire, les doublons et les emplacements.
+- 3 photos d'origine du client en basse définition (terrasse, cabine DJ, colonne d'enceintes, 578 à 677 px), affichées en petit cadre ; recadrées de 4,5 % pour retirer les flèches de carrousel.
+- Fichiers : `images/photos/<nom>-<largeur>.webp` (480, 800, 1200, 1600 px selon la source, générés avec Pillow, qualité 80 à 82). Aucune amélioration, aucun traitement par IA, aucun service tiers.
+- Crédit visible en pied de page de chaque page et sur la page Infos.
 
 ## Images
 
-Aucune image IA, aucune photo de stock, aucune photo de tiers. Rien n'est envoyé à un service tiers (hors téléchargement de GSAP par le navigateur).
-
+Aucune image générée par IA, aucune photo de stock, aucune photo de tiers. Rien n'est envoyé à un service tiers : tout est servi en local.

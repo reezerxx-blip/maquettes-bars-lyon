@@ -1,4 +1,4 @@
-﻿# Sources du contenu
+# Sources du contenu
 
 Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.
 
@@ -25,11 +25,11 @@ Phrases d'accroche et descriptions courtes (« Porte fermée », « La nuit, en 
 
 - Instagram : lien profil.
 - Carte : recherche d'adresse Google Maps (lien simple, aucune donnée envoyée, aucune carte intégrée).
-- Seul chargement distant : GSAP cœur depuis cdn.jsdelivr.net (URL vérifiée dans le skill web-pro-toolkit). Le site fonctionne sans.
+- Aucun chargement distant : GSAP 3.15.0 est hébergé en local (`js/gsap.min.js`) et le site fonctionne sans.
 
 ## Visuels
 
-Aucune photo. Emplacements marqués [PHOTO À FOURNIR PAR LE BAR]. Logo : monogramme S7 redessiné par la maquette avec la police pixel ; [LOGO OFFICIEL À FOURNIR].
+Photos et affiches : voir PHOTOS-ANALYSE.md. Emplacement marqué [PHOTO À FOURNIR PAR LE BAR] : espace resto uniquement. Logo : monogramme S7 redessiné par la maquette avec la police pixel ; [LOGO OFFICIEL À FOURNIR].
 
 ## Placeholders [À CONFIRMER] restants
 
@@ -54,7 +54,10 @@ Aucune photo. Emplacements marqués [PHOTO À FOURNIR PAR LE BAR]. Logo : monogr
 - 6 photos du compte (accueil, infos), crédit : « Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar. »
 - Textes d'accueil raccourcis (ton sobre).
 
+## Ajouts v3 (photos HD du compte Instagram)
+
+12 photos HD et affiches du compte @super7_lyon (voir PHOTOS-ANALYSE.md), plus 3 photos d'origine du client en basse définition. Crédit : « Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux du bar. » Légendes et alt décrivent uniquement ce qui est visible. Affiches du 8 au 11 octobre et du 1er au 4 octobre : visuels de programmation créditées, présentées comme « affiches précédentes ». Horaires du JSON-LD : jeudi à dimanche, 17h à 01h, tels que donnés dans la bio Instagram ; aucun téléphone ni prix.
+
 ## Placeholders restants (mise à jour)
 
-[PHOTO À FOURNIR PAR LE BAR] : terrasse et espace resto (carte du lieu et planche contact). [LOGO OFFICIEL À FOURNIR]. Les autres [À CONFIRMER] de la liste ci-dessus restent valables, plus : line-up du slow opening à confirmer.
-
+[PHOTO À FOURNIR PAR LE BAR] : espace resto uniquement (carte du lieu et planche contact). [LOGO OFFICIEL À FOURNIR]. Les autres [À CONFIRMER] de la liste ci-dessus restent valables, plus : line-up du slow opening, adresse web définitive pour og:image et JSON-LD.
