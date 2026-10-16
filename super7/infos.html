@@ -28,7 +28,10 @@
       <img src="images/logo-s7.svg" width="40" height="40" alt="">
       <span class="px">Super7</span>
     </a>
-    <p class="clock px" id="clock" aria-hidden="true">17H/01H</p>
+    <div class="clock" aria-hidden="true">
+      <p class="clock-time px" id="clock">17H/01H</p>
+      <div class="clock-meta"><span class="phase label" id="phase">Jour</span><span class="meter" id="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    </div>
     <nav class="site-nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="programmation.html">Programmation</a>
@@ -39,26 +42,32 @@
 
 <main id="contenu">
   <section class="t-jour concrete page-head" aria-labelledby="titre-infos">
+    <img class="s7bg " src="images/s7-ton-jour.svg" width="120" height="120" alt="" aria-hidden="true" data-par="-50">
     <div class="wrap">
-      <h1 class="px" id="titre-infos">Infos pratiques</h1>
-      <p class="lead">Tout pour venir : horaires, adresse, contact.</p>
+      <h1 class="px scan" id="titre-infos">Infos pratiques</h1>
+      <p class="lead">Horaires, adresse, contact.</p>
     </div>
   </section>
-  <section class="section t-jour" style="padding-top:var(--s-6)" aria-label="Informations">
+
+  <section class="bleed bleed--short" aria-label="Étagère en bois avec enceinte hi-fi">
+    <div class="bleed-media"><img class="" src="images/photos/etagere-enceinte.jpg" width="512" height="640" alt="Étagère en bois clair avec une enceinte hi-fi vintage, à côté d'un mur de briques de verre." style="object-position:50% 45%" loading="lazy" decoding="async" data-par="50"></div>
+  </section>
+
+  <section class="section t-jour concrete" aria-label="Informations">
     <div class="wrap">
-      <div class="info-grid">
-        <div class="info-block">
+      <div class="info-grid info-grid--3">
+        <div class="info-block rv">
           <h2 class="px">Horaires</h2>
           <p>Jeudi à dimanche, 17h à 01h, pour le moment.</p>
           <p class="muted">Slow opening du 24 au 27 septembre 2026.</p>
         </div>
-        <div class="info-block">
+        <div class="info-block rv">
           <h2 class="px">Adresse</h2>
           <p>40 rue Saint-Jérôme<br>69007 Lyon</p>
           <p class="linklist"><a href="https://www.google.com/maps/search/?api=1&amp;query=40%20rue%20Saint-J%C3%A9r%C3%B4me%2069007%20Lyon" rel="noopener" target="_blank">Ouvrir dans une carte <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="3" y="11" width="2" height="2"/><rect x="5" y="9" width="2" height="2"/><rect x="7" y="7" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="3" width="8" height="2"/><rect x="11" y="3" width="2" height="8"/></svg><span class="sr-only"> (nouvel onglet)</span></a></p>
           <p>Transports et vélo : <span class="tbc">[À CONFIRMER]</span></p>
         </div>
-        <div class="info-block">
+        <div class="info-block rv">
           <h2 class="px">Contact</h2>
           <p class="linklist"><a href="https://www.instagram.com/super7_lyon/" rel="noopener" target="_blank">Instagram @super7_lyon <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="3" y="11" width="2" height="2"/><rect x="5" y="9" width="2" height="2"/><rect x="7" y="7" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="3" width="8" height="2"/><rect x="11" y="3" width="2" height="8"/></svg><span class="sr-only"> (nouvel onglet)</span></a></p>
           <p>Téléphone : <span class="tbc">[À CONFIRMER]</span></p>
@@ -67,9 +76,11 @@
       </div>
     </div>
   </section>
-  <section class="section t-soiree concrete" aria-labelledby="titre-lieu2">
+  <div class="sep sep--jour-soiree concrete" aria-hidden="true"></div>
+
+  <section class="section t-soiree concrete" aria-labelledby="titre-lieu2" style="padding-top:var(--s-5)">
     <div class="wrap">
-      <div class="section-head"><p class="label">Le lieu</p><h2 class="px" id="titre-lieu2">Avant de venir</h2></div>
+      <div class="section-head"><p class="label rv">Le lieu</p><h2 class="px rv-px" id="titre-lieu2">Avant de venir</h2></div>
       <div class="prose">
         <p>Ancien garage de 350&nbsp;m² : grande terrasse, bar (bières locales, vins vivants, cocktails) et club intimiste. Un espace resto est à venir.</p>
         <p>Le Super7 est géré par la même équipe que le Super5.</p>
@@ -82,8 +93,13 @@
         <dt>Réservation, privatisation</dt><dd><span class="tbc">[À CONFIRMER]</span> (téléphone ou outil existant)</dd>
         <dt>Espace resto</dt><dd>À venir. Ouverture et carte : <span class="tbc">[À CONFIRMER]</span></dd>
       </dl>
+      <h2 class="px" style="font-size:var(--step-2);color:var(--accent);margin-top:var(--s-7);margin-bottom:var(--s-3)">Crédits photos</h2>
+      <p class="prose credit-block">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar.</p>
     </div>
   </section>
+  <div class="sep sep--soiree-nuit concrete" aria-hidden="true"></div>
+
+  <section class="plage plage--strip t-nuit" aria-hidden="true"><span class="beam"></span><span class="beam beam--b"></span></section>
 </main>
 <footer class="site-footer t-profonde">
   <div class="wrap">
@@ -101,8 +117,10 @@
       </nav>
     </div>
     <p class="legal">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.</p>
+    <p class="legal legal--credit">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar.</p>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

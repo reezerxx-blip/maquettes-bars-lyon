@@ -4,7 +4,7 @@ Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus ©
 
 ## Source unique : le brief client (transmis dans la demande)
 
-Aucune page du site officiel ni aucun compte Instagram n'a été consulté ou copié. Toutes les informations viennent du brief.
+Aucune page du site officiel n'a été consulté ou copiée. Les informations viennent du brief et du relevé du compte Instagram @super7_lyon transmis par le client (voir INSTAGRAM-ANALYSE.md).
 
 | Contenu utilisé | Où | Origine |
 |---|---|---|
@@ -45,3 +45,16 @@ Aucune photo. Emplacements marqués [PHOTO À FOURNIR PAR LE BAR]. Logo : monogr
 10. Moyens de paiement (infos)
 11. Réservation, privatisation (infos)
 12. [PHOTO À FOURNIR PAR LE BAR] x3 (accueil) et [LOGO OFFICIEL À FOURNIR]
+
+## Ajouts v2.1 (relevé Instagram transmis par le client)
+
+- Line-up du slow opening (24 au 27 sept. 2026) vu sur l'affiche Instagram : Axymt, Bœuf & Brocoli, Farah & Mouataz, IMA:R, Isa, Mastaï, Neskeh, Notserious Bigs, Nuage Rose, Pablo Valentino, Pelaya, P Errine, Sayan, S.D.S, Tauceti, Waxist ; « 17h, 01h, gratuit ». Marqué à confirmer dans la page. Jours de la semaine (jeu à dim) déduits du calendrier.
+- Programmation du 15 au 18 oct. : mention « exemple de semaine vu sur Instagram, à jour au 15 au 18 oct., à confirmer ».
+- Couleurs et hiérarchie d'affiche : INSTAGRAM-ANALYSE.md.
+- 6 photos du compte (accueil, infos), crédit : « Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar. »
+- Textes d'accueil raccourcis (ton sobre).
+
+## Placeholders restants (mise à jour)
+
+[PHOTO À FOURNIR PAR LE BAR] : terrasse et espace resto (carte du lieu et planche contact). [LOGO OFFICIEL À FOURNIR]. Les autres [À CONFIRMER] de la liste ci-dessus restent valables, plus : line-up du slow opening à confirmer.
+

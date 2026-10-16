@@ -28,7 +28,10 @@
       <img src="images/logo-s7.svg" width="40" height="40" alt="">
       <span class="px">Super7</span>
     </a>
-    <p class="clock px" id="clock" aria-hidden="true">17H/01H</p>
+    <div class="clock" aria-hidden="true">
+      <p class="clock-time px" id="clock">17H/01H</p>
+      <div class="clock-meta"><span class="phase label" id="phase">Jour</span><span class="meter" id="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    </div>
     <nav class="site-nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="programmation.html">Programmation</a>
@@ -38,11 +41,13 @@
 </header>
 
 <main id="contenu">
-  <section class="t-profonde nf">
+  <section class="t-profonde nf bricks-bg">
+    <span class="beam" aria-hidden="true"></span>
+    <img class="s7bg" src="images/logo-s7.svg" width="120" height="120" alt="" aria-hidden="true">
     <div class="wrap">
       <p class="label">Erreur 404</p>
-      <h1 class="px">Porte fermée</h1>
-      <p class="lead">Cette page n’existe pas ou plus. La soirée continue ailleurs sur le site.</p>
+      <h1 class="px scan">Porte fermée</h1>
+      <p class="lead">Cette page n’existe pas ou plus.</p>
       <p class="hero-cta"><a class="btn" href="index.html">Retour à l’accueil <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></a><a class="btn btn--ghost" href="programmation.html">Programmation</a></p>
     </div>
   </section>
@@ -63,6 +68,7 @@
       </nav>
     </div>
     <p class="legal">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.</p>
+    <p class="legal legal--credit">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar.</p>
   </div>
 </footer>
 <script src="js/main.js" defer></script>

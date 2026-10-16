@@ -1,4 +1,4 @@
-/* Tokens Super7 : voir DIRECTION.md. Nommage inspiré d'Open Props (non chargé). */
+﻿/* Tokens Super7 : voir DIRECTION.md. Nommage inspiré d'Open Props (non chargé). */
 @font-face {
   font-family: "Super7 Pixel";
   src: url("../fonts/super7-pixel.woff2") format("woff2");
@@ -15,10 +15,11 @@
 
 :root {
   /* Couleurs de base */
-  --beton: #dad7d0;
-  --beton-2: #c9c5bc;
+  --beton: #d2d0cc;
+  --beton-2: #c3c1bc;
   --brun: #2b1a12;
   --brun-2: #3a251a;
+  --brun-affiche: #4a2e2b;
   --nuit: #2a0c0d;
   --nuit-2: #1a0808;
   --encre: #24160f;
@@ -26,8 +27,8 @@
   --brique: #b3201c;
 
   /* Accent */
-  --orange: #ff5a14;
-  --orange-jour: #c23e08;
+  --orange: #ff4a14;
+  --orange-jour: #b83a06;
 
   /* Rôles (thème jour par défaut) */
   --bg: var(--beton);
@@ -46,6 +47,7 @@
   --step-3: 2.5rem;
   --step-4: clamp(2.5rem, 7vw, 4.5rem);
   --step-5: clamp(3.25rem, 11vw, 8rem);
+  --step-giant: clamp(5rem, 31vw, 22rem);
 
   /* Espacements */
   --s-1: 4px;
@@ -81,3 +83,5 @@
 .t-soiree { --bg: var(--brun); --fg: var(--sable); --muted: #bdb2a2; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
 .t-nuit { --bg: var(--nuit); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
 .t-profonde { --bg: var(--nuit-2); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+
+

@@ -3,32 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matchs et évènements | Le Lyon’s (maquette)</title>
-<meta name="description" content="Maquette : diffusion des matchs, blind tests et soirées à thème au Lyon’s. Calendrier à confirmer.">
+<title>Matchs et évènements, Le Lyon’s (maquette)</title>
+<meta name="description" content="Maquette de refonte non officielle : matchs sur grand écran, blind test et soirées à thème au Lyon’s. Exemple de programmation à confirmer.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0a1326">
+<meta name="theme-color" content="#0a1630">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/sourceserif4-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
-<script>if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("js-lion")}</script>
+<script>(function(){var d=document.documentElement;if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){d.classList.add("js");setTimeout(function(){if(!d.classList.contains("ready")){d.classList.remove("js")}},4500)}})()</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
 <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-<symbol id="i-tram" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="2"/><path d="M5 11h14M8 21l2-4M16 21l-2-4M9 7h.01M15 7h.01"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></symbol>
+<symbol id="i-tram" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14"/><path d="M5 11h14M8 21l2-4M16 21l-2-4M9 7h.01M15 7h.01"/></symbol>
+<symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 8.2l3.4 2.5-1.3 4h-4.2l-1.3-4zM12 8.2V2.5M15.4 10.7l5.3-1.7M14.1 14.7l3.3 4.4M9.9 14.7l-3.3 4.4M8.6 10.7 3.3 9"/></symbol>
+<symbol id="i-rugby" viewBox="0 0 24 24"><path d="M4 20C2.5 12 8 4.5 20 4c.5 12-6 18-16 16z"/><path d="M8.5 15.5l7-7M11 9.5l3.5 3.5M9.5 12l2.5 2.5"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 22V3M5 4h15v11H5M10 4v11M15 4v11M5 9.5h15"/></symbol>
+<symbol id="i-tv" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="12.5"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-mug" viewBox="0 0 24 24"><path d="M4.5 7h11v13h-11zM15.5 10H18a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2.5M8 10.5v6M12 10.5v6M4.5 7c0-2.5 2-3.5 3.5-2.5C9 3 11 3 12 4.5c2-1 3.5.5 3.5 2.5"/></symbol>
+<symbol id="i-cocktail" viewBox="0 0 24 24"><path d="M3.5 4h17L12 13.5zM12 13.5V21M7.5 21h9M15 4.5l3.5-2.5"/></symbol>
+<symbol id="i-wine" viewBox="0 0 24 24"><path d="M7.5 3h9c0 6.5-1.5 10-4.5 10S7.5 9.500 7.500 3zM12 13v8M8 21h8M7.8 8.5h8.4"/></symbol>
+<symbol id="i-board" viewBox="0 0 24 24"><path d="M3 6h14v13H3zM17 10h4v3h-4M7 11a1.800 1.800 0 1 0 0 .1M12 11a1.800 1.800 0 1 0 0 .1M7 15.500h6"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><path d="M9 3h6v10a3 3 0 0 1-6 0zM5 11a7 7 0 0 0 14 0M12 18v3.500M8.500 21.500h7"/></symbol>
+<symbol id="i-cam" viewBox="0 0 24 24"><path d="M2.500 7.500h4l2-3.500h7l2 3.500h4v12.500h-19zM12 17.500a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.500h4l2 5-2.500 1.500a11 11 0 0 0 5 5l1.500-2.500 5 2v4a1.500 1.500 0 0 1-1.500 1.500A16.500 16.500 0 0 1 3.500 5 1.500 1.500 0 0 1 5 3.500z"/></symbol>
+<symbol id="i-park" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17"/><path d="M9.500 17V7.500h4a3 3 0 0 1 0 6h-4"/></symbol>
+<symbol id="i-users"viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.500"/><path d="M2.500 20c0-4 3-6 6.500-6s6.500 2 6.500 6M16 4.800a3.500 3.500 0 0 1 0 6.400M18 14.500c2 .8 3.500 2.600 3.500 5.500"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 1.500l2.800 8.200 8.200 2.300-8.200 2.300L12 22.500l-2.800-8.200L1 12l8.200-2.300z"/></symbol>
 </defs></svg>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <div class="container site-header__row">
     <a class="brand" href="index.html" aria-label="Le Lyon’s, accueil">
-      <span class="brand__name">Le Lyon’s</span>
-      <span class="brand__tag eyebrow">Bar | Afterwork</span>
+      <span class="brand__name"><b>Le</b> Lyon’s</span>
+      <span class="brand__tag">Bar | Afterwork</span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
       <a href="carte.html">La carte</a>
@@ -37,58 +51,148 @@
     </nav>
     <a class="btn btn--primary site-header__cta" href="https://linktr.ee/LeLyonsBar" rel="noopener noreferrer" target="_blank">Réserver<span class="sr-only"> (nouvel onglet)</span></a>
   </div>
+  <span class="tri" aria-hidden="true"></span>
 </header>
 <main id="contenu">
 
-<section class="band page-hero">
+<section class="page-hero has-halftone has-grain">
+  <svg class="icon page-hero__art" aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>
   <div class="container">
-    <p class="eyebrow rise">Matchs et évènements</p>
-    <h1 class="rise" style="--d:80ms">Les soirs de match, les soirées à thème.</h1>
-    <p class="rise" style="--d:160ms">Le Lyon’s diffuse la Ligue 1 et la Ligue des champions, et organise des soirées à thème comme le blind test.</p>
+    <p class="eyebrow"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-tv"/></svg> Matchs et évènements</p>
+    <h1>Grand écran, <em>grosse</em> ambiance</h1>
+    <p class="lead">Le Lyon’s diffuse la Ligue 1 et la Ligue des champions, et organise des soirées à thème comme le blind test.</p>
+    <div class="btn-row" style="margin-top:32px"><a class="btn btn--primary" href="https://linktr.ee/LeLyonsBar" rel="noopener noreferrer" target="_blank">Réserver une table<span class="sr-only"> (nouvel onglet)</span></a><a class="btn btn--ghost" href="#programme">Voir le programme</a></div>
+  </div>
+  <span class="tri tri--lg" aria-hidden="true" style="position:absolute;bottom:0;left:0"></span>
+</section>
+<div class="marquee marquee--cream marquee--rev" role="group" aria-label="Grand écran, ambiance, drinks, passion du foot">
+  <p class="sr-only">Grand écran, ambiance, drinks, passion du foot</p>
+  <div class="marquee__track" aria-hidden="true"><ul class="marquee__group"><li>Grand écran<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Ambiance<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Drinks<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Passion du foot<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Grand écran<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Ambiance<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Drinks<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Passion du foot<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li></ul><ul class="marquee__group"><li>Grand écran<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Ambiance<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Drinks<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Passion du foot<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Grand écran<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Ambiance<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Drinks<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li><li>Passion du foot<svg class="icon sep" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></li></ul></div>
+</div>
+<section class="section prog has-halftone has-grain" aria-labelledby="t-programme" id="programme">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow eyebrow--red"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-tv"/></svg> Programme de la semaine</p>
+      <h2 id="t-programme">Ça se joue ici</h2>
+      <p class="prog__note">Exemple de programmation vu sur Instagram, à confirmer. Ce n’est pas le calendrier officiel du bar.</p>
+    </div>
+    <ul class="matches">
+<li class="match" data-sport="foot" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>Football</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">ven.</span><span class="match__day">25</span><span class="match__mon">sept.</span></p>
+    <p class="match__teams"><span>Turquie</span><span class="match__vs">contre</span><span>France</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>20h45</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="f1" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-flag"/></svg>Formule 1</span><span class="match__comp">Grand Prix</span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">sam.</span><span class="match__day">26</span><span class="match__mon">sept.</span></p>
+    <p class="match__teams"><span>Grand Prix d’Azerbaïdjan</span><span class="match__vs">F1</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>13h00</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="rugby" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-rugby"/></svg>Rugby</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">sam.</span><span class="match__day">26</span><span class="match__mon">sept.</span></p>
+    <p class="match__teams"><span>Stade Français</span><span class="match__vs">contre</span><span>LOU</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>16h55</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="foot" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>Football</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">lun.</span><span class="match__day">28</span><span class="match__mon">sept.</span></p>
+    <p class="match__teams"><span>Belgique</span><span class="match__vs">contre</span><span>France</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>20h45</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="foot" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>Football</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">ven.</span><span class="match__day">2</span><span class="match__mon">oct.</span></p>
+    <p class="match__teams"><span>France</span><span class="match__vs">contre</span><span>Italie</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>20h45</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="rugby" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-rugby"/></svg>Rugby</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">sam.</span><span class="match__day">3</span><span class="match__mon">oct.</span></p>
+    <p class="match__teams"><span>UBB</span><span class="match__vs">contre</span><span>LOU</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>14h30</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="foot" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>Football</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">ven.</span><span class="match__day">9</span><span class="match__mon">oct.</span></p>
+    <p class="match__teams"><span>Lyon</span><span class="match__vs">contre</span><span>Lens</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>20h45</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="foot" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>Football</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">mer.</span><span class="match__day">14</span><span class="match__mon">oct.</span></p>
+    <p class="match__teams"><span>Man City</span><span class="match__vs">contre</span><span>PSG</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>21h00</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+<li class="match" data-sport="foot" data-reveal>
+  <div class="match__bar"><span class="match__sport"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ball"/></svg>Football</span><span class="match__comp"><mark class="tbc">[COMPÉTITION À CONFIRMER]</mark></span></div>
+  <div class="match__body">
+    <p class="match__date"><span class="match__dow">jeu.</span><span class="match__day">15</span><span class="match__mon">oct.</span></p>
+    <p class="match__teams"><span>Lyon</span><span class="match__vs">contre</span><span>Crystal Palace</span></p>
+  </div>
+  <div class="match__foot"><span class="match__time"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>18h45</span><span class="match__tag">Grand écran</span></div>
+  <span class="tri" aria-hidden="true"></span>
+</li>
+    </ul>
+    <p style="margin-top:48px" data-reveal><a class="link-arrow" href="https://www.instagram.com/bar_le_lyons/" rel="noopener noreferrer" target="_blank">Le vrai programme sur @bar_le_lyons <svg class="icon " aria-hidden="true" focusable="false"><use href="#i-ext"/></svg><span class="sr-only"> (nouvel onglet)</span></a></p>
   </div>
 </section>
-<section class="band band--light" aria-labelledby="t-calendrier">
-  <div class="container">
-    <div class="section-head" data-reveal>
-      <p class="eyebrow">Les matchs</p>
-      <h2 id="t-calendrier">Calendrier</h2>
-      <p class="soft">Le calendrier sera mis à jour avec les dates communiquées par le bar. Aucune date, aucun score n’est inventé dans cette maquette.</p>
-    </div>
-    <div class="table-wrap" data-reveal>
-      <table class="sched">
-        <caption class="eyebrow">Calendrier des diffusions <mark class="tbc">[À CONFIRMER]</mark></caption>
-        <thead><tr><th scope="col">Date</th><th scope="col">Compétition</th><th scope="col">Affiche</th><th scope="col">Coup d’envoi</th></tr></thead>
-        <tbody>
-          <tr><td data-label="Date"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Compétition"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Affiche"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Coup d’envoi"><mark class="tbc">[À CONFIRMER]</mark></td></tr>
-          <tr><td data-label="Date"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Compétition"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Affiche"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Coup d’envoi"><mark class="tbc">[À CONFIRMER]</mark></td></tr>
-          <tr><td data-label="Date"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Compétition"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Affiche"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Coup d’envoi"><mark class="tbc">[À CONFIRMER]</mark></td></tr>
-          <tr><td data-label="Date"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Compétition"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Affiche"><mark class="tbc">[À CONFIRMER]</mark></td><td data-label="Coup d’envoi"><mark class="tbc">[À CONFIRMER]</mark></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note soft" data-reveal>Réserver pour un soir de match : <mark class="tbc">[À CONFIRMER : modalités, par le lien de réservation ou sur place]</mark>.</p>
-  </div>
-</section>
-<section class="band band--dark" aria-labelledby="t-soirees">
+<section class="section on-light" aria-labelledby="t-resa">
   <div class="container split">
-    <div class="section-head" data-reveal style="margin-bottom:0">
-      <p class="eyebrow">Soirées à thème</p>
-      <h2 id="t-soirees">Blind test et rendez-vous du bar.</h2>
+    <div class="section__head" data-reveal style="margin-bottom:0">
+      <p class="eyebrow">Un soir de match</p>
+      <h2 id="t-resa">On garde la meilleure place</h2>
     </div>
     <div data-reveal>
-      <p class="soft">Le bar propose des soirées à thème, dont le blind test. Dates, fréquence et règles <mark class="tbc">[À CONFIRMER]</mark>. Les annonces passent par Instagram.</p>
-      <p style="margin-top:24px"><a class="link-arrow" href="https://www.instagram.com/bar_le_lyons/" rel="noopener noreferrer" target="_blank">Suivre @bar_le_lyons <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ext"/></svg><span class="sr-only"> (nouvel onglet)</span></a></p>
+      <p class="lead">Réserver pour un soir de match : <mark class="tbc">[À CONFIRMER : modalités, par le lien de réservation ou sur place]</mark>.</p>
+      <div class="btn-row" style="margin-top:24px"><a class="btn btn--primary" href="https://linktr.ee/LeLyonsBar" rel="noopener noreferrer" target="_blank">Réserver une table<span class="sr-only"> (nouvel onglet)</span></a></div>
     </div>
   </div>
 </section>
-<section class="band band--light" aria-labelledby="t-groupes">
+<section class="section neon" aria-labelledby="t-blind">
+  <div class="container neon__inner" data-reveal>
+    <p class="eyebrow"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-mic"/></svg> Soirées à thème</p>
+    <h2 id="t-blind" class="neon__title"><span>Blind</span><span>Test</span></h2>
+    <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p>Un extrait, trois secondes pour trouver. Le blind test fait partie des soirées à thème du bar, annoncées sur Instagram. Dates, fréquence et règles <mark class="tbc">[À CONFIRMER]</mark>.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn--ghost" href="https://www.instagram.com/bar_le_lyons/" rel="noopener noreferrer" target="_blank">Suivre les annonces<span class="sr-only"> (nouvel onglet)</span></a>
+    </div>
+  </div>
+</section>
+<section class="section venir has-grain" aria-labelledby="t-groupes">
   <div class="container split">
-    <div class="section-head" data-reveal style="margin-bottom:0">
-      <p class="eyebrow">Groupes</p>
-      <h2 id="t-groupes">Afterwork d’équipe, bande d’amis, étudiants.</h2>
+    <div class="section__head" data-reveal style="margin-bottom:0">
+      <p class="eyebrow"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-users"/></svg> Groupes</p>
+      <h2 id="t-groupes">Afterwork d’équipe, bande d’amis, étudiants</h2>
     </div>
     <div data-reveal>
-      <p class="soft">Pour une table de groupe ou un évènement, passez par la page Évènements Groupes du bar. Capacité et conditions <mark class="tbc">[À CONFIRMER]</mark>.</p>
+      <p class="lead">Pour une table de groupe ou un évènement, passez par la page Évènements Groupes du bar. Capacité et conditions <mark class="tbc">[À CONFIRMER]</mark>.</p>
       <div class="btn-row" style="margin-top:24px">
         <a class="btn btn--primary" href="https://linktr.ee/LeLyonsBar" rel="noopener noreferrer" target="_blank">Évènements groupes<span class="sr-only"> (nouvel onglet)</span></a>
         <a class="btn btn--ghost" href="https://linktr.ee/LeLyonsBar" rel="noopener noreferrer" target="_blank">Réservations<span class="sr-only"> (nouvel onglet)</span></a>
@@ -98,12 +202,15 @@
 </section>
 </main>
 <footer class="site-footer">
+  <span class="tri tri--lg" aria-hidden="true"></span>
   <div class="container">
+    <p class="site-footer__big" aria-hidden="true">Le Lyon’s</p>
     <div class="site-footer__grid">
       <div>
-        <p class="brand__name">Le Lyon’s</p>
-        <p class="eyebrow brand__tag">Bar | Afterwork</p>
-        <p style="margin-top:16px">Le repaire pour rugir entre amis.</p>
+        <p class="brand__name"><b>Le</b> Lyon’s</p>
+        <p class="eyebrow">Bar | Afterwork</p>
+        <p style="margin-top:8px">Le repaire pour rugir entre amis.</p>
+        <p class="soft" style="margin-top:8px">46 avenue Paul Santy, 69008 Lyon</p>
       </div>
       <div>
         <p class="eyebrow">Le bar</p>
@@ -124,6 +231,7 @@
     <p class="site-footer__mention">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Le Lyon’s.</p>
   </div>
 </footer>
+<script src="js/gsap.min.js"></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

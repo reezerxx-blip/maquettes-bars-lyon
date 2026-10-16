@@ -28,7 +28,10 @@
       <img src="images/logo-s7.svg" width="40" height="40" alt="">
       <span class="px">Super7</span>
     </a>
-    <p class="clock px" id="clock" aria-hidden="true">17H/01H</p>
+    <div class="clock" aria-hidden="true">
+      <p class="clock-time px" id="clock">17H/01H</p>
+      <div class="clock-meta"><span class="phase label" id="phase">Jour</span><span class="meter" id="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    </div>
     <nav class="site-nav" aria-label="Navigation principale">
       <a href="index.html" aria-current="page">Accueil</a>
       <a href="programmation.html">Programmation</a>
@@ -39,23 +42,27 @@
 
 <main id="contenu">
   <section class="hero t-jour concrete" aria-labelledby="titre-hero">
+    <img class="s7bg " src="images/s7-ton-jour.svg" width="120" height="120" alt="" aria-hidden="true" data-par="-70">
     <div class="wrap">
       <div class="hero-eyebrow label">
         <span>Lieu de vie et club</span>
         <span>Lyon 7e</span>
         <span>Même équipe que le Super5</span>
       </div>
-      <h1 class="hero-title px" id="titre-hero"><span class="sr-only">Super7</span><span class="ch" aria-hidden="true">S</span><span class="ch" aria-hidden="true">U</span><span class="ch" aria-hidden="true">P</span><span class="ch" aria-hidden="true">E</span><span class="ch" aria-hidden="true">R</span><span class="ch" aria-hidden="true">7</span></h1>
+      <h1 class="hero-title px scan" id="titre-hero"><span class="sr-only">Super7</span><span class="ch" aria-hidden="true">S</span><span class="ch" aria-hidden="true">U</span><span class="ch" aria-hidden="true">P</span><span class="ch" aria-hidden="true">E</span><span class="ch" aria-hidden="true">R</span><span class="ch" aria-hidden="true">7</span></h1>
       <div class="hero-bottom">
         <div class="hero-copy">
-          <p class="lead">Un ancien garage de 350&nbsp;m², devenu lieu de vie et club : un bar, une grande terrasse et une programmation électronique locale et indépendante.</p>
-          <p class="label" style="margin-bottom:var(--s-4)">Slow opening du 24 au 27 septembre 2026</p>
+          <p class="lead">Un ancien garage de 350&nbsp;m², devenu lieu de vie et club.</p>
+          <p class="label slow-tag">Slow opening du 24 au 27 septembre 2026</p>
           <div class="hero-cta">
-            <a class="btn" href="programmation.html">Voir la programmation <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></a>
+            <a class="btn" href="programmation.html">Programmation <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></a>
             <a class="btn btn--ghost" href="infos.html">Venir au Super7</a>
           </div>
         </div>
-        <div class="wallwrap"><div class="wall" aria-hidden="true"></div>
+        <div class="wallwrap"><div class="wall">
+          <img class="wall-img" src="images/photos/bar-interieur.jpg" width="512" height="640" alt="Le bar de jour : comptoir en bois clair et verre dépoli, étagères avec enceintes et disques, murs de plâtre brut avec niches, tuyau rouge, tables de pique-nique et un chien au premier plan." style="object-position:50% 42%" fetchpriority="high">
+          <div class="wall-bricks" aria-hidden="true"></div><span class="beam" aria-hidden="true"></span>
+          </div>
           <img class="badge" src="images/logo-s7.svg" width="144" height="144" alt="">
         </div>
       </div>
@@ -64,131 +71,238 @@
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <div class="ticker-group px"><span>Jeudi à dimanche</span><span>17H à 01H pour le moment</span><span>40 rue Saint-Jérôme</span><span>Lyon 7e</span><span>@super7_lyon</span></div>
-      <div class="ticker-group px" aria-hidden="true"><span>Jeudi à dimanche</span><span>17H à 01H pour le moment</span><span>40 rue Saint-Jérôme</span><span>Lyon 7e</span><span>@super7_lyon</span></div>
+      <div class="ticker-group px"><span>Jeudi à dimanche</span><span class="dot"></span><span>17H à 01H pour le moment</span><span class="dot"></span><span>40 rue Saint-Jérôme</span><span class="dot"></span><span>Lyon 7e</span><span class="dot"></span><span>@super7_lyon</span><span class="dot"></span></div>
+      <div class="ticker-group px" aria-hidden="true"><span>Jeudi à dimanche</span><span class="dot"></span><span>17H à 01H pour le moment</span><span class="dot"></span><span>40 rue Saint-Jérôme</span><span class="dot"></span><span>Lyon 7e</span><span class="dot"></span><span>@super7_lyon</span><span class="dot"></span></div>
     </div>
   </div>
 
-  <section class="section t-jour concrete" id="lieu" aria-labelledby="titre-lieu">
+  <section class="section lieu t-jour concrete" id="lieu" aria-labelledby="titre-lieu">
+    <img class="s7bg " src="images/s7-ton-jour.svg" width="120" height="120" alt="" aria-hidden="true" data-par="50">
     <div class="wrap">
       <div class="section-head">
-        <p class="label">Le lieu</p>
-        <h2 class="px" id="titre-lieu">Un garage, quatre espaces</h2>
+        <p class="label rv">Le lieu</p>
+        <h2 class="px rv-px" id="titre-lieu">Un garage, quatre espaces</h2>
+        <p class="lead rv">Plâtre brut, bois clair, briques de verre, enceintes et disques.</p>
       </div>
       <div class="spaces">
-        <article class="space">
+        <article class="space rv">
+          <div class="space-media"><span class="vf" aria-hidden="true"></span><span class="cross" aria-hidden="true"></span><p class="ph-tag"><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span></p></div>
           <span class="num px" aria-hidden="true">01</span>
           <h3 class="px">Terrasse</h3>
-          <p>Une grande terrasse, pour boire dehors avant que la nuit tombe.</p>
+          <p>Une grande terrasse.</p>
+          <span class="corner" aria-hidden="true"></span>
         </article>
-        <article class="space">
+        <article class="space rv">
+          <div class="space-media"><img class="" src="images/photos/bar-interieur.jpg" width="512" height="640" alt="Le bar de jour : comptoir en bois clair et verre dépoli, étagères avec enceintes et disques, murs de plâtre brut avec niches, tuyau rouge, tables de pique-nique et un chien au premier plan." style="object-position:50% 40%" loading="lazy" decoding="async"></div>
           <span class="num px" aria-hidden="true">02</span>
           <h3 class="px">Bar</h3>
-          <p>Des bières locales, des vins vivants et des cocktails.</p>
+          <p>Bières locales, vins vivants, cocktails.</p>
+          <span class="corner" aria-hidden="true"></span>
         </article>
-        <article class="space">
+        <article class="space rv">
+          <div class="space-media"><img class="" src="images/photos/club-foule.jpg" width="512" height="640" alt="Le club en lumière rouge : silhouettes de la foule sous les faisceaux de lumière." style="object-position:50% 12%" loading="lazy" decoding="async"></div>
           <span class="num px" aria-hidden="true">03</span>
           <h3 class="px">Club</h3>
-          <p>Un club intimiste, avec une programmation électronique locale et indépendante.</p>
+          <p>Un club intimiste. Électronique locale et indépendante.</p>
+          <span class="corner" aria-hidden="true"></span>
         </article>
-        <article class="space">
+        <article class="space rv">
+          <div class="space-media"><span class="vf" aria-hidden="true"></span><span class="cross" aria-hidden="true"></span><p class="ph-tag"><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span></p></div>
           <span class="num px" aria-hidden="true">04</span>
           <h3 class="px">Espace resto</h3>
           <p>À venir. Ouverture et carte : <span class="tbc">[À CONFIRMER]</span></p>
+          <span class="corner" aria-hidden="true"></span>
         </article>
       </div>
       <div class="facts">
-        <p class="fact"><b>350<small>&nbsp;m²</small></b>d’ancien garage</p>
-        <p class="fact"><b>10,4&nbsp;k</b>abonnés sur <a href="https://www.instagram.com/super7_lyon/" rel="noopener">@super7_lyon</a></p>
+        <p class="fact rv"><b>350<small>&nbsp;m²</small></b>d’ancien garage</p>
+        <p class="fact rv"><b>10,4&nbsp;k</b>abonnés sur <a href="https://www.instagram.com/super7_lyon/" rel="noopener">@super7_lyon</a></p>
       </div>
     </div>
   </section>
 
-  <section class="section t-soiree concrete" id="semaine" aria-labelledby="titre-semaine">
+  <section class="bleed" aria-label="L’entrée du Super7, de nuit">
+    <div class="bleed-media"><img class="" src="images/photos/entree-nuit.jpg" width="480" height="640" alt="Grande verrière de l'ancien garage vue depuis la rue, la nuit, avec du monde devant l'entrée." style="object-position:50% 10%" loading="lazy" decoding="async" data-par="70"></div>
+    <div class="bleed-cap wrap"><p class="px">40 rue Saint-Jérôme</p><p class="label">Lyon 7e, ancien garage</p></div>
+  </section>
+
+  <section class="poster-h t-jour concrete" id="horaires" aria-labelledby="titre-horaires">
+    <img class="s7bg " src="images/s7-ton-jour.svg" width="120" height="120" alt="" aria-hidden="true" data-par="60">
     <div class="wrap">
-      <div class="section-head section-head--wide">
-        <p class="label">Exemple de semaine</p>
-        <h2 class="px" id="titre-semaine">Chaque soir, deux affiches</h2>
-        <p class="muted prose">Le bar et le club ont chacun leur programmation. Semaine donnée à titre d’exemple, mention d’origine : « à jour au 15 au 18 oct. ».</p>
+      <div class="ph-grid">
+        <div class="ph-top">
+          <h2 class="label" id="titre-horaires">Horaires, pour le moment</h2>
+          <p class="label">Super7, 40 rue Saint-Jérôme, Lyon 7e</p>
+        </div>
+        <p class="big px scan rv-px" aria-hidden="true">17H</p>
+        <ul class="cols">
+          <li class="rv"><span class="dow px">Jeu</span><span class="label">17H/01H</span></li>
+          <li class="rv"><span class="dow px">Ven</span><span class="label">17H/01H</span></li>
+          <li class="rv"><span class="dow px">Sam</span><span class="label">17H/01H</span></li>
+          <li class="rv"><span class="dow px">Dim</span><span class="label">17H/01H</span></li>
+        </ul>
+        <div class="ph-foot">
+          <p class="copy rv">Jeudi à dimanche, de 17h à 01h, pour le moment.</p>
+          <p class="big px scan rv-px" aria-hidden="true">01H</p>
+        </div>
       </div>
-      <ol class="days">
-  <li class="day reveal">
-    <h3 class="day-date px">Jeu <small>15 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Jean Granon &amp; Rhahis</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>Cornelius Doctor</p></div>
-  </li>
-  <li class="day reveal">
-    <h3 class="day-date px">Ven <small>16 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Léon</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>Roxane</p></div>
-  </li>
-  <li class="day reveal">
-    <h3 class="day-date px">Sam <small>17 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>6_Sour &amp; Menz</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>DJ Chuimix</p></div>
-  </li>
-  <li class="day reveal">
-    <h3 class="day-date px">Dim <small>18 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Je t’aime Rachel L</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>IMA:R</p></div>
-  </li>
-</ol>
-      <p class="note"><a class="btn btn--ghost" href="programmation.html">Toute la programmation <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></a></p>
     </div>
   </section>
+  <div class="sep sep--jour-soiree concrete" aria-hidden="true"></div>
 
-  <section class="night t-nuit" id="nuit" aria-labelledby="titre-nuit">
+  <section class="section t-soiree concrete" id="semaine" aria-labelledby="titre-semaine" style="padding-top:var(--s-5)">
     <div class="wrap">
-      <div class="night-panel">
-        <p class="label" style="color:var(--sable)">Après le coucher du soleil</p>
-        <h2 class="px" id="titre-nuit">La nuit, en rouge</h2>
-        <p>Briques de verre, béton brut, bois et lumière rouge. Un club intimiste où la musique électronique locale et indépendante a la place principale.</p>
+      <div class="rail-head section-head section-head--wide">
+        <div class="head-text">
+          <p class="label rv">Exemple de semaine, vu sur Instagram</p>
+          <h2 class="px rv-px" id="titre-semaine">15 au 18 oct.</h2>
+          <p class="muted prose">À jour au 15 au 18 oct. <span class="tbc">[À CONFIRMER]</span></p>
+        </div>
+        <div class="rail-ctrl" hidden><button class="btn btn--prev" type="button" aria-label="Jours précédents"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></button><button class="btn btn--next" type="button" aria-label="Jours suivants"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></button></div>
       </div>
     </div>
+    <div class="rail" tabindex="0" role="region" aria-label="Semaine d’exemple, défilement horizontal">
+      <ol>
+      <li class="pcard"><div class="pcard-date"><span class="n px">15</span><span class="d px">Jeu<br>Oct.</span></div>
+        <div class="slot" data-slot="bar"><p class="px">Jean Granon &amp; Rhahis<sup class="tag">Bar</sup></p></div>
+        <div class="slot" data-slot="club"><p class="px">Cornelius Doctor<sup class="tag">Club</sup></p></div></li>
+      <li class="pcard"><div class="pcard-date"><span class="n px">16</span><span class="d px">Ven<br>Oct.</span></div>
+        <div class="slot" data-slot="bar"><p class="px">Léon<sup class="tag">Bar</sup></p></div>
+        <div class="slot" data-slot="club"><p class="px">Roxane<sup class="tag">Club</sup></p></div></li>
+      <li class="pcard"><div class="pcard-date"><span class="n px">17</span><span class="d px">Sam<br>Oct.</span></div>
+        <div class="slot" data-slot="bar"><p class="px">6_Sour &amp; Menz<sup class="tag">Bar</sup></p></div>
+        <div class="slot" data-slot="club"><p class="px">DJ Chuimix<sup class="tag">Club</sup></p></div></li>
+      <li class="pcard"><div class="pcard-date"><span class="n px">18</span><span class="d px">Dim<br>Oct.</span></div>
+        <div class="slot" data-slot="bar"><p class="px">Je t’aime Rachel L<sup class="tag">Bar</sup></p></div>
+        <div class="slot" data-slot="club"><p class="px">IMA:R<sup class="tag">Club</sup></p></div></li>
+      </ol>
+    </div>
+    <div class="wrap"><p class="note"><a class="btn btn--ghost" href="programmation.html">Toute la programmation <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="1" y="7" width="11" height="2"/><rect x="9" y="4" width="2" height="2"/><rect x="11" y="6" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="9" y="10" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/></svg></a></p></div>
   </section>
 
-  <section class="section t-soiree concrete" id="photos" aria-labelledby="titre-photos">
+  <section class="section t-soiree concrete" id="photos" aria-labelledby="titre-photos" style="padding-top:var(--s-5)">
     <div class="wrap">
       <div class="section-head">
-        <p class="label">Images</p>
-        <h2 class="px" id="titre-photos">Le lieu en images</h2>
+        <p class="label rv">Planche contact</p>
+        <h2 class="px rv-px" id="titre-photos">Le lieu en images</h2>
       </div>
-      <div class="photos">
-        <figure class="photo" role="img" aria-label="Emplacement réservé à une photo du club">
-          <p class="px">Le club</p>
-          <p><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span> Plan large de la salle, lumière rouge.</p>
-        </figure>
-        <figure class="photo" role="img" aria-label="Emplacement réservé à une photo de la terrasse">
-          <p class="px">Terrasse</p>
-          <p><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span> La terrasse en fin de journée.</p>
-        </figure>
-        <figure class="photo" role="img" aria-label="Emplacement réservé à une photo du bar">
-          <p class="px">Bar</p>
-          <p><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span> Le comptoir et les verres.</p>
-        </figure>
+      <div class="sheet">
+      <figure class="ph ph--bar ph--notch">
+        <div class="ph-img"><img class="" src="images/photos/bar-interieur.jpg" width="512" height="640" alt="Le bar de jour : comptoir en bois clair et verre dépoli, étagères avec enceintes et disques, murs de plâtre brut avec niches, tuyau rouge, tables de pique-nique et un chien au premier plan." style="object-position:50% 45%" loading="lazy" decoding="async"></div>
+        <figcaption><span class="label">01 Bar, de jour</span></figcaption>
+      </figure>
+      <figure class="ph ">
+        <div class="ph-img"><img class="" src="images/photos/etagere-enceinte.jpg" width="512" height="640" alt="Étagère en bois clair avec une enceinte hi-fi vintage, à côté d'un mur de briques de verre." style="object-position:50% 40%" loading="lazy" decoding="async"></div>
+        <figcaption><span class="label">02 Étagère hi-fi</span></figcaption>
+      </figure>
+      <figure class="ph ph--notch">
+        <div class="ph-img"><img class="" src="images/photos/briques-rouges.jpg" width="512" height="640" alt="Mur de briques de verre rouges et porte rouge, vus de nuit." style="object-position:50% 40%" loading="lazy" decoding="async"></div>
+        <figcaption><span class="label">03 Briques rouges</span></figcaption>
+      </figure>
+      <figure class="ph ph--notch">
+        <div class="ph-img"><img class="" src="images/photos/entree-nuit.jpg" width="480" height="640" alt="Grande verrière de l'ancien garage vue depuis la rue, la nuit, avec du monde devant l'entrée." style="object-position:50% 30%" loading="lazy" decoding="async"></div>
+        <figcaption><span class="label">04 Entrée, de nuit</span></figcaption>
+      </figure>
+      <figure class="ph ">
+        <div class="ph-img"><img class="" src="images/photos/club-foule.jpg" width="512" height="640" alt="Le club en lumière rouge : silhouettes de la foule sous les faisceaux de lumière." style="object-position:50% 30%" loading="lazy" decoding="async"></div>
+        <figcaption><span class="label">05 Club</span></figcaption>
+      </figure>
+      <figure class="ph ph--sq">
+        <div class="ph-img"><img class="" src="images/photos/mur-arche.jpg" width="512" height="640" alt="Plafond et mur de plâtre écaillé, chemin de câbles avec un néon orange, lumière du jour." style="object-position:50% 40%" loading="lazy" decoding="async"></div>
+        <figcaption><span class="label">06 Plâtre brut</span></figcaption>
+      </figure>
+      <figure class="photo photo--terrasse" role="img" aria-label="Emplacement réservé à une photo de la terrasse">
+        <span class="vf" aria-hidden="true"></span><span class="cross" aria-hidden="true"></span>
+        <span class="shot label">07</span>
+        <h3 class="px">Terrasse</h3>
+        <p><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span> La terrasse, en fin de journée.</p>
+      </figure>
+      <figure class="photo photo--resto" role="img" aria-label="Emplacement réservé à une photo de l’espace resto">
+        <span class="vf" aria-hidden="true"></span><span class="cross" aria-hidden="true"></span>
+        <span class="shot label">08</span>
+        <h3 class="px">Espace resto</h3>
+        <p><span class="tbc">[PHOTO À FOURNIR PAR LE BAR]</span> Quand l’espace ouvrira.</p>
+      </figure>
+      </div>
+    </div>
+  </section>
+  <div class="sep sep--soiree-nuit concrete" aria-hidden="true"></div>
+
+  <section class="plage t-nuit" id="nuit" aria-labelledby="titre-nuit">
+    <span class="beam" aria-hidden="true"></span><span class="beam beam--b" aria-hidden="true"></span>
+    <img class="plage-s7" src="images/logo-s7.svg" width="120" height="120" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div class="night-panel rv">
+        <p class="label" style="color:var(--sable)">Après le coucher du soleil</p>
+        <h2 class="px" id="titre-nuit">La nuit, en rouge</h2>
+        <p>Briques de verre, béton brut, bois. Un club intimiste.</p>
       </div>
     </div>
   </section>
 
-  <section class="section t-profonde" id="venir" aria-labelledby="titre-venir">
+  <section class="slow t-nuit concrete" id="slow-opening" aria-labelledby="titre-slow">
     <div class="wrap">
-      <div class="section-head"><p class="label">Venir</p><h2 class="px" id="titre-venir">Jeudi à dimanche</h2></div>
-      <div class="info-grid">
-        <div class="info-block">
+      <div class="section-head section-head--wide">
+        <p class="label rv">Slow opening, 24 au 27 septembre 2026</p>
+        <h2 class="px scan rv-px" id="titre-slow">Line-up</h2>
+        <p class="muted prose">Line-up du slow opening vu sur Instagram. <span class="tbc">[À CONFIRMER]</span></p>
+      </div>
+      <ul class="slow-cols">
+        <li class="rv"><span class="n px scan">24</span><span class="dow px">Jeu</span></li>
+        <li class="rv"><span class="n px scan">25</span><span class="dow px">Ven</span></li>
+        <li class="rv"><span class="n px scan">26</span><span class="dow px">Sam</span></li>
+        <li class="rv"><span class="n px scan">27</span><span class="dow px">Dim</span></li>
+      </ul>
+      <ul class="lineup">
+        <li class="rv"><span>Axymt</span></li>
+        <li class="rv"><span>Bœuf &amp; Brocoli</span></li>
+        <li class="rv"><span>Farah &amp; Mouataz</span></li>
+        <li class="rv"><span>IMA:R</span></li>
+        <li class="rv"><span>Isa</span></li>
+        <li class="rv"><span>Mastaï</span></li>
+        <li class="rv"><span>Neskeh</span></li>
+        <li class="rv"><span>Notserious Bigs</span></li>
+        <li class="rv"><span>Nuage Rose</span></li>
+        <li class="rv"><span>Pablo Valentino</span></li>
+        <li class="rv"><span>Pelaya</span></li>
+        <li class="rv"><span>P Errine</span></li>
+        <li class="rv"><span>Sayan</span></li>
+        <li class="rv"><span>S.D.S</span></li>
+        <li class="rv"><span>Tauceti</span></li>
+        <li class="rv"><span>Waxist</span></li>
+      </ul>
+      <p class="free px rv" aria-label="17h, 01h, gratuit">17H<span class="dot" aria-hidden="true"></span>01H<span class="dot" aria-hidden="true"></span>Gratuit</p>
+    </div>
+  </section>
+  <div class="sep sep--nuit-profonde concrete" aria-hidden="true"></div>
+
+  <section class="section t-profonde" id="venir" aria-labelledby="titre-venir" style="padding-top:var(--s-5)">
+    <div class="wrap">
+      <div class="section-head"><p class="label rv">Venir</p><h2 class="px rv-px" id="titre-venir">Jeudi à dimanche</h2></div>
+      <div class="info-grid info-grid--4">
+        <div class="info-block rv">
           <h3 class="px">Horaires</h3>
           <p>Jeudi à dimanche, 17h à 01h, pour le moment.</p>
         </div>
-        <div class="info-block">
+        <div class="info-block rv">
           <h3 class="px">Adresse</h3>
           <p>40 rue Saint-Jérôme<br>69007 Lyon</p>
           <p class="linklist"><a href="https://www.google.com/maps/search/?api=1&amp;query=40%20rue%20Saint-J%C3%A9r%C3%B4me%2069007%20Lyon" rel="noopener" target="_blank">Ouvrir dans une carte <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="3" y="11" width="2" height="2"/><rect x="5" y="9" width="2" height="2"/><rect x="7" y="7" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="3" width="8" height="2"/><rect x="11" y="3" width="2" height="8"/></svg><span class="sr-only"> (nouvel onglet)</span></a></p>
         </div>
-        <div class="info-block">
-          <h3 class="px">Suivre</h3>
-          <p class="linklist"><a href="https://www.instagram.com/super7_lyon/" rel="noopener" target="_blank">Instagram @super7_lyon <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="3" y="11" width="2" height="2"/><rect x="5" y="9" width="2" height="2"/><rect x="7" y="7" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="3" width="8" height="2"/><rect x="11" y="3" width="2" height="8"/></svg><span class="sr-only"> (nouvel onglet)</span></a></p>
+        <div class="info-block rv">
+          <h3 class="px">Accès</h3>
+          <p>Transports et vélo : <span class="tbc">[À CONFIRMER]</span></p>
+        </div>
+        <div class="info-block rv">
+          <h3 class="px">Contact</h3>
           <p>Téléphone : <span class="tbc">[À CONFIRMER]</span></p>
         </div>
       </div>
+      <a class="insta rv" href="https://www.instagram.com/super7_lyon/" rel="noopener" target="_blank">
+        <span class="label">Instagram, 10,4&nbsp;k abonnés</span>
+        <span class="handle px scan">@super7_lyon</span>
+        <span class="label">Suivre le compte <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges"><rect x="3" y="11" width="2" height="2"/><rect x="5" y="9" width="2" height="2"/><rect x="7" y="7" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="3" width="8" height="2"/><rect x="11" y="3" width="2" height="8"/></svg><span class="sr-only"> (nouvel onglet)</span></span>
+      </a>
     </div>
   </section>
 </main>
@@ -208,6 +322,7 @@
       </nav>
     </div>
     <p class="legal">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.</p>
+    <p class="legal legal--credit">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar.</p>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>

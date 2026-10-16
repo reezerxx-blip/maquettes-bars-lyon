@@ -19,6 +19,9 @@ Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus ©
 - `images/glass-brick.svg` : motif de brique de verre.
 - `images/concrete.svg` : trame de béton (filtre feTurbulence).
 - `images/logo-s7.svg` et `favicon.svg` : monogramme S7 redessiné (non officiel).
+- `images/s7-ton-jour.svg`, `s7-ton-nuit.svg`, `s7-ton-brun.svg` : variantes tonales du S7 (graphisme).
+- `images/grain.svg` : grain fin (feTurbulence). `images/dither-*.svg` : bandes de tramage de Bayer générées par script.
+- Effet de balayage des titres : masque CSS, aucun fichier.
 - `images/og.png` : image de partage générée par script avec la police pixel.
 - Icônes : flèches en pixels dessinées en SVG inline (un seul jeu, style unique).
 
@@ -26,6 +29,11 @@ Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus ©
 
 Catalogue 21st.dev, recherche « marquee ticker » : principe du bandeau défilant en pause au survol. Aucun code récupéré, réécrit en CSS.
 
+## Photos
+
+6 photos du compte Instagram @super7_lyon, fournies par le client et reprises telles quelles (JPG de 480 à 512 px de large, aucun service tiers) pour cette maquette. Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar. Fichiers : `images/photos/bar-interieur.jpg`, `etagere-enceinte.jpg`, `briques-rouges.jpg`, `entree-nuit.jpg`, `club-foule.jpg`, `mur-arche.jpg`. Crédit visible en pied de page et sur la page Infos.
+
 ## Images
 
-Aucune photo, aucune image IA, aucune photo de stock. Rien n'est envoyé à un service tiers (hors téléchargement de GSAP par le navigateur).
+Aucune image IA, aucune photo de stock, aucune photo de tiers. Rien n'est envoyé à un service tiers (hors téléchargement de GSAP par le navigateur).
+

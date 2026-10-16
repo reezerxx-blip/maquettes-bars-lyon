@@ -1,17 +1,27 @@
-/* Mouvement : 3 moments (hero, horloge, semaine). Tout reste visible sans JS. */
+﻿/* Mouvement : transform, opacity, clip-path par pas. Tout reste visible sans JS. */
 .js .hero-title .ch { opacity: 0; }
 .js .hero-title.is-shown .ch { opacity: 1; }
 
-.js .reveal { opacity: 0; transform: translateY(12px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
-.js .reveal.is-in { opacity: 1; transform: none; }
+/* Révélation douce */
+.js .rv { opacity: 0; transform: translateY(16px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
+.js .rv.is-in { opacity: 1; transform: none; }
+
+/* Révélation par pas pixelisés (balayage horizontal par crans) */
+.js .rv-px { clip-path: inset(-10% 100% -10% -2%); transition: clip-path 640ms steps(12, end); }
+.js .rv-px.is-in { clip-path: inset(-10% -100vw -10% -2%); }
+
+.js .badge-stamp { opacity: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .js .hero-title .ch { opacity: 1; }
-  .js .reveal { opacity: 1; transform: none; transition: none; }
-  .ticker-track { animation: none; width: auto; }
+  .js .rv { opacity: 1; transform: none; transition: none; }
+  .js .rv-px, .js .rv-px.is-in { clip-path: none; transition: none; }
+  .ticker-track { animation: none; width: auto; transform: none; }
   .ticker-group { flex-wrap: wrap; white-space: normal; padding-right: 0; padding-inline: var(--gutter); }
   .ticker-group[aria-hidden="true"] { display: none; }
-  .btn, .site-nav a { transition: none; }
+  .btn, .btn::before, .btn svg, .site-nav a, .space, .pcard, .ph-img img, .space-media img, .wall-img, .insta, .insta::before, .seg button, .seg button::before, .affiche-bricks, .cols li, .slow-cols li, .lineup li { transition: none; }
+  .slot.is-swap p { animation: none; }
+  .beam { will-change: auto; }
 }
 
 /* Transition entre pages (navigateurs compatibles, sinon navigation normale) */

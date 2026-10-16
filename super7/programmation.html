@@ -28,7 +28,10 @@
       <img src="images/logo-s7.svg" width="40" height="40" alt="">
       <span class="px">Super7</span>
     </a>
-    <p class="clock px" id="clock" aria-hidden="true">17H/01H</p>
+    <div class="clock" aria-hidden="true">
+      <p class="clock-time px" id="clock">17H/01H</p>
+      <div class="clock-meta"><span class="phase label" id="phase">Jour</span><span class="meter" id="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    </div>
     <nav class="site-nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="programmation.html" aria-current="page">Programmation</a>
@@ -38,46 +41,58 @@
 </header>
 
 <main id="contenu">
-  <section class="t-soiree concrete page-head" aria-labelledby="titre-prog">
+  <section class="t-jour concrete page-head" aria-labelledby="titre-prog">
+    <img class="s7bg " src="images/s7-ton-jour.svg" width="120" height="120" alt="" aria-hidden="true" data-par="-50">
     <div class="wrap">
-      <h1 class="px" id="titre-prog">Programmation</h1>
-      <p class="lead">Du jeudi au dimanche, un artiste au bar et un au club, chaque soir.</p>
+      <h1 class="px scan" id="titre-prog">Programmation</h1>
+      <p class="stamp label">Exemple de semaine vu sur Instagram, à jour au 15 au 18 oct., à confirmer <span class="tbc">[À CONFIRMER]</span></p>
     </div>
   </section>
-  <section class="section t-soiree concrete" style="padding-top:var(--s-6)" aria-labelledby="titre-sem">
+
+  <section class="affiche t-jour concrete" id="affiche" data-view="all" aria-labelledby="titre-sem">
+    <div class="affiche-bricks" aria-hidden="true"></div>
+    <img class="s7bg " src="images/s7-ton-jour.svg" width="120" height="120" alt="" aria-hidden="true" data-par="40">
+    <img class="s7bg " src="images/s7-ton-nuit.svg" width="120" height="120" alt="" aria-hidden="true" data-par="40">
     <div class="wrap">
-      <h2 class="px" id="titre-sem" style="font-size:var(--step-3);color:var(--accent);margin-bottom:var(--s-3)">Exemple de semaine</h2>
-      <p class="muted" style="margin-bottom:var(--s-5)">Mention d’origine : « à jour au 15 au 18 oct. ».</p>
-      <div class="filters" role="group" aria-label="Filtrer la programmation" hidden>
-        <button class="btn btn--ghost" type="button" data-filter="all" aria-pressed="true">Tout</button>
-        <button class="btn btn--ghost" type="button" data-filter="bar" aria-pressed="false">Bar</button>
-        <button class="btn btn--ghost" type="button" data-filter="club" aria-pressed="false">Club</button>
+      <div class="affiche-top">
+        <h2 class="px" id="titre-sem">Jeu 15 / Dim 18 oct.</h2>
+        <p class="label">Super7, lieu de vie et club</p>
       </div>
-      <ol class="days">
-  <li class="day reveal">
-    <h3 class="day-date px">Jeu <small>15 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Jean Granon &amp; Rhahis</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>Cornelius Doctor</p></div>
-  </li>
-  <li class="day reveal">
-    <h3 class="day-date px">Ven <small>16 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Léon</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>Roxane</p></div>
-  </li>
-  <li class="day reveal">
-    <h3 class="day-date px">Sam <small>17 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>6_Sour &amp; Menz</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>DJ Chuimix</p></div>
-  </li>
-  <li class="day reveal">
-    <h3 class="day-date px">Dim <small>18 oct.</small></h3>
-    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Je t’aime Rachel L</p></div>
-    <div class="slot" data-slot="club"><span class="label">Club</span><p>IMA:R</p></div>
-  </li>
-</ol>
+      <div class="seg" role="group" aria-label="Filtrer la programmation" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">Tout</button>
+        <button type="button" data-filter="bar" aria-pressed="false">Bar</button>
+        <button type="button" data-filter="club" aria-pressed="false">Club</button>
+      </div>
+      <p class="seg-status label" id="seg-status" aria-live="polite" hidden>Affichage : bar et club</p>
+      <ol class="week">
+        <li class="dcol rv">
+          <h3 class="dcol-head"><span class="dow px">Jeu</span><span class="num px">15</span><span class="mon label">oct.</span></h3>
+          <div class="slot" data-slot="bar"><p class="px">Jean Granon &amp; Rhahis<sup class="tag">Bar</sup></p></div>
+          <div class="slot" data-slot="club"><p class="px">Cornelius Doctor<sup class="tag">Club</sup></p></div>
+        </li>
+        <li class="dcol rv">
+          <h3 class="dcol-head"><span class="dow px">Ven</span><span class="num px">16</span><span class="mon label">oct.</span></h3>
+          <div class="slot" data-slot="bar"><p class="px">Léon<sup class="tag">Bar</sup></p></div>
+          <div class="slot" data-slot="club"><p class="px">Roxane<sup class="tag">Club</sup></p></div>
+        </li>
+        <li class="dcol rv">
+          <h3 class="dcol-head"><span class="dow px">Sam</span><span class="num px">17</span><span class="mon label">oct.</span></h3>
+          <div class="slot" data-slot="bar"><p class="px">6_Sour &amp; Menz<sup class="tag">Bar</sup></p></div>
+          <div class="slot" data-slot="club"><p class="px">DJ Chuimix<sup class="tag">Club</sup></p></div>
+        </li>
+        <li class="dcol rv">
+          <h3 class="dcol-head"><span class="dow px">Dim</span><span class="num px">18</span><span class="mon label">oct.</span></h3>
+          <div class="slot" data-slot="bar"><p class="px">Je t’aime Rachel L<sup class="tag">Bar</sup></p></div>
+          <div class="slot" data-slot="club"><p class="px">IMA:R<sup class="tag">Club</sup></p></div>
+        </li>
+      </ol>
       <p class="note">Les prochaines semaines sont annoncées sur Instagram : <a href="https://www.instagram.com/super7_lyon/" rel="noopener" target="_blank">@super7_lyon<span class="sr-only"> (nouvel onglet)</span></a>. Calendrier complet sur ce site : <span class="tbc">[À CONFIRMER]</span></p>
     </div>
   </section>
+
+  <div class="ticker ticker--big" aria-hidden="true"><div class="ticker-track"><div class="ticker-group px"><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span></div><div class="ticker-group px"><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span><span class="tag px">Bar</span><span>Jean Granon &amp; Rhahis</span><span class="dot"></span><span class="tag px">Bar</span><span>Léon</span><span class="dot"></span><span class="tag px">Bar</span><span>6_Sour &amp; Menz</span><span class="dot"></span><span class="tag px">Bar</span><span>Je t’aime Rachel L</span><span class="dot"></span></div></div></div>
+  <div class="ticker ticker--big ticker--club ticker--rev" aria-hidden="true"><div class="ticker-track"><div class="ticker-group px"><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span></div><div class="ticker-group px"><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span><span class="tag px">Club</span><span>Cornelius Doctor</span><span class="dot"></span><span class="tag px">Club</span><span>Roxane</span><span class="dot"></span><span class="tag px">Club</span><span>DJ Chuimix</span><span class="dot"></span><span class="tag px">Club</span><span>IMA:R</span><span class="dot"></span></div></div></div>
+
   <section class="section t-profonde" aria-labelledby="titre-entree">
     <div class="wrap">
       <h2 class="px" id="titre-entree" style="font-size:var(--step-3);color:var(--accent);margin-bottom:var(--s-4)">Entrée et billetterie</h2>
@@ -104,6 +119,7 @@
       </nav>
     </div>
     <p class="legal">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.</p>
+    <p class="legal legal--credit">Photos © Super7, @super7_lyon (Instagram), reprises pour cette maquette ; à remplacer par les originaux haute définition du bar.</p>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>

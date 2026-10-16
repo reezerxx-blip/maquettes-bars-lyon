@@ -1,62 +1,53 @@
-# Direction artistique : Le Lyon's
+# Direction artistique v2 : Le Lyon's
 
 Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Le Lyon's.
 
+La v1 (marine, laiton, serif, peu de visuel) est refusée par le client. Elle est conservée dans `lelyons-maquette-v1-SAUVEGARDE`. Cette v2 repart de zéro, au plus près de l'énergie de l'Instagram @bar_le_lyons : bar de sport et d'afterwork.
+
 ## Concept en une phrase
 
-Un repaire : dehors la nuit bleu marine, dedans une lampe de laiton allumée et une tablée entre amis.
+Un mur d'affiches de bar de sport : gros titres condensés, filets tricolores, un lion qui rugit, et ça défile.
 
-Tout choix visuel se rattache à cette idée. Le fond marine est la nuit et le lieu, le blanc cassé est le papier d'une carte de brasserie, le laiton est la lumière d'une applique, jamais un néon.
+Tout choix visuel se rattache à cette idée : on est dans un bar où les affiches de match sont collées au mur, où l'écran est grand et où l'on se retrouve entre amis.
 
-## Ce qu'on évite
+## Identité
 
-- Pub irlandais : pas de vert, de trèfle, de bois sombre à clous, de typo gothique.
-- Néon sportif : pas de couleurs saturées, de rouge/vert stade, de typo oblique agressive, de silhouettes de joueurs.
-- Template « bar » : pas de dégradé violet, pas de cartes arrondies avec ombre, pas de grille de 3 icônes identiques.
+- **Typographie** : Anton (SIL OFL 1.1, en local) pour tout ce qui crie : titres, dates, équipes, marquees. Capitales, interligne 0,9 à 1. DM Sans (SIL OFL 1.1, variable, en local) pour le texte. Deux polices, pas une de plus.
+- **Palette** : marine profond `#0A1630` (fond dominant), rouge vif `#CC1B27`, bleu vif `#1F55F0`, crème `#F4EEDF`. Accent de lecture sur marine : rouge clair `#FF5F66`, bleu clair `#7FA2FF`.
+- **Filets tricolores** : bande bleu, crème, rouge (hauteur 8 ou 16 px), signature répétée sur chaque section et chaque carte.
+- **Pictos** : une seule famille SVG au trait (24 px, trait 2, extrémités arrondies) : horloge, épingle, tram, ballon, ballon de rugby, damier F1, écran, chope, cocktail, verre de vin, planche, micro, appareil photo, flèches.
+- **Formes** : tout carré, aucun arrondi (affiches, cartes, boutons, étiquettes). Ombres dures décalées (une seule élévation de référence).
+- **Lion** : grand lion SVG original au trait, tête à crinière en flammes, costume, chope levée. Dessiné pour la maquette, jamais copié du logo réel. [LOGO OFFICIEL À FOURNIR].
+- **Motifs** : rayures tricolores, trame halftone (points), grain léger (SVG feTurbulence statique).
 
-## Palette (3 couleurs de base + 1 accent)
+## Blocs à identité propre
 
-| Rôle | Valeur | Usage |
-| --- | --- | --- |
-| Marine nuit | #0F1C38 (profond #0A1326, relevé #172A4D) | fonds sombres, texte sur clair |
-| Blanc cassé | #F4EFE4 | fonds clairs, texte sur sombre |
-| Marine moyen | #223A66 | filets, surfaces secondaires |
-| Accent laiton | #D6A55A | liens, détails, un seul point de lumière par écran |
-
-Pas de noir pur, pas de blanc pur. Contrastes AA vérifiés en CHECKLIST.md.
-
-## Typographie
-
-- Display : Source Serif 4 (serif éditorial), graisse 600, titres serrés (interligne 1,05 à 1,15). Sert au nom « Le Lyon's » et aux titres.
-- Texte et étiquettes : Archivo variable. Corps en graisse 400. Étiquettes et navigation en capitales, largeur 125 %, interlettrage 0,16 em, pour rappeler le sans-serif espacé du logo.
-- Échelle : ratio 1,25 (14, 16, 20, 25, 31, 39, 49, 61, jusqu'à un titre fluide de héros).
-- Espacements : 4, 8, 16, 24, 32, 48, 64, 96, 128.
-- Formes : angles droits partout, filets de 1 px. Pas d'ombres sauf une élévation de référence très douce.
+- **Blind Test** : seul endroit où le néon rose `#FF3DA8` et cyan `#2EF2FF` est autorisé, sur fond violet-noir `#0B0620`. Barres d'égaliseur animées en `transform`.
+- **Dégustations** : bloc sombre et chaud, brun-bordeaux `#2B0E0C`, ambre `#F2A93B`, cuivre `#C8642B`. Formes seulement : disques concentriques façon soleil couchant, verre et tranche d'orange dessinés. Aucune marque tierce, aucun logo, aucun nom de marque, aucune bouteille reconnaissable.
+- **Programme de la semaine** : cartes style Instagram sur fond marine (date, compétition, équipe A contre équipe B, heure). Présenté comme « exemple de programmation vu sur Instagram, à confirmer », jamais comme calendrier officiel. Aucun blason, aucune photo de joueur.
 
 ## Composition
 
-- Alternance de bandes sombres (marine) et claires (blanc cassé) comme les pages d'une carte.
-- Héros asymétrique : nom du bar très grand à gauche, lion au trait à droite qui déborde sur la bande suivante (le seul élément qui casse la grille de l'accueil).
-- Sections : un repaire (trois moments : afterwork, matchs, soirées), la carte (catégories, sans prix inventés), les matchs (calendrier en placeholder), venir au bar.
-- Photos : emplacements typographiques [PHOTO À FOURNIR PAR LE BAR] en aplats marine avec motif de filets. Aucune fausse photo.
-- Lion : illustration au trait originale, volontairement simple, en attendant le logo officiel [VISUEL À FOURNIR PAR LE BAR].
+- Hero plein écran, nom en immense condensé, baseline sur bande rouge, lion au trait.
+- Sections plein écran ou presque, alternance marine / crème / rouge / blocs à identité propre.
+- Deux bandes défilantes : « FOOD · DRINKS · GOOD VIBES » (rouge) et « Grand écran · Ambiance · Drinks · Passion du foot » (crème).
+- Un élément casse la grille par section : titres débordants, étiquettes inclinées, lion qui sort du cadre.
+- Photos du bar : cadres travaillés (trame, coin tricolore, picto appareil photo) marqués [PHOTO À FOURNIR PAR LE BAR]. Aucune fausse photo, aucune image IA ou de stock.
 
-## Mouvement (3 moments, transform et opacité seulement)
+## Mouvement (GSAP cœur, transform et opacity)
 
-1. Entrée du héros : titre et sous-titre montent légèrement (CSS pur, 500 à 700 ms, ease-out).
-2. Le lion se dessine trait par trait puis lève sa chope une fois (GSAP cœur, une seule séquence d'environ 2 s).
-3. Apparition au scroll des blocs et des lignes du calendrier (IntersectionObserver, décalage de 60 ms).
+1. Entrée du hero : lignes du titre qui montent d'un masque, baseline, boutons, puis le lion se dessine et lève sa chope.
+2. Apparition au scroll (IntersectionObserver + GSAP) des affiches et cartes, en cascade courte.
+3. Parallaxe légère du lion (transform) et défilement continu des marquees (CSS).
+4. Micro-mouvements : égaliseur du Blind Test, scintillement néon discret.
+- `prefers-reduced-motion` : tout est coupé, le contenu reste visible.
+- Sans JavaScript : site complet, rien n'est caché par défaut (les états cachés sont posés par le script).
+- Courbes ease-out, 150 à 700 ms.
 
-Pas d'animation sur les actions clavier. `prefers-reduced-motion` : aucune animation, contenu visible immédiatement. Sans JavaScript ou sans GSAP : tout est visible et statique.
+## Ce qu'on évite
 
-## 3D
+Pub irlandais (vert, bois, laiton, trèfle, harpe, pinte stylisée), serif, marine et laiton de la v1, dégradés décoratifs sans raison, tiret cadratin et demi-cadratin, emojis, lorem ipsum, chiffres ou prix inventés, logos de clubs ou de ligues, photos de joueurs, marque tierce.
 
-Non applicable. Aucune scène 3D n'apporte quelque chose à un bar de quartier ; elle alourdirait la page sans servir le concept.
+## Accessibilité
 
-## Technique
-
-HTML statique, CSS maison à partir de tokens, un script léger. CDN : GSAP cœur uniquement (URL vérifiée dans le skill web-pro-toolkit). Open Props et Lenis non utilisés : les tokens maison suffisent, et le défilement natif est plus fiable. Polices locales (OFL).
-
-## Pages
-
-index, carte, matchs et évènements, infos pratiques, 404.
+Contrastes AA calculés (texte crème sur marine, texte crème sur rouge, texte marine sur crème). Focus visible en double anneau (blanc + bleu), cibles de 44 px minimum, lien d'évitement, hiérarchie de titres, `lang="fr"`.
