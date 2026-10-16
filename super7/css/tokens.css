@@ -1,0 +1,83 @@
+/* Tokens Super7 : voir DIRECTION.md. Nommage inspiré d'Open Props (non chargé). */
+@font-face {
+  font-family: "Super7 Pixel";
+  src: url("../fonts/super7-pixel.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+}
+
+:root {
+  /* Couleurs de base */
+  --beton: #dad7d0;
+  --beton-2: #c9c5bc;
+  --brun: #2b1a12;
+  --brun-2: #3a251a;
+  --nuit: #2a0c0d;
+  --nuit-2: #1a0808;
+  --encre: #24160f;
+  --sable: #e4ddd0;
+  --brique: #b3201c;
+
+  /* Accent */
+  --orange: #ff5a14;
+  --orange-jour: #c23e08;
+
+  /* Rôles (thème jour par défaut) */
+  --bg: var(--beton);
+  --fg: var(--encre);
+  --muted: #4a3a30;
+  --accent: var(--orange-jour);
+  --line: rgba(36, 22, 15, 0.35);
+
+  /* Typographie */
+  --font-display: "Super7 Pixel", "Courier New", monospace;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --step--1: 0.8125rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.4rem;
+  --step-2: 1.9rem;
+  --step-3: 2.5rem;
+  --step-4: clamp(2.5rem, 7vw, 4.5rem);
+  --step-5: clamp(3.25rem, 11vw, 8rem);
+
+  /* Espacements */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 16px;
+  --s-4: 24px;
+  --s-5: 32px;
+  --s-6: 48px;
+  --s-7: 64px;
+  --s-8: 96px;
+  --gutter: 16px;
+
+  /* Forme : tout carré */
+  --radius: 0;
+  --border: 2px;
+
+  /* Mouvement */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --dur-micro: 120ms;
+  --dur-short: 200ms;
+  --dur-medium: 350ms;
+  --dur-long: 600ms;
+
+  --maxw: 1280px;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 32px; }
+}
+
+/* Thèmes par section */
+.t-jour { --bg: var(--beton); --fg: var(--encre); --muted: #4a3a30; --accent: var(--orange-jour); --line: rgba(36, 22, 15, 0.35); }
+.t-soiree { --bg: var(--brun); --fg: var(--sable); --muted: #bdb2a2; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+.t-nuit { --bg: var(--nuit); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }
+.t-profonde { --bg: var(--nuit-2); --fg: var(--sable); --muted: #c9b8ae; --accent: var(--orange); --line: rgba(228, 221, 208, 0.28); }

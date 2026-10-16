@@ -1,0 +1,21 @@
+/* Mouvement : 3 moments (hero, horloge, semaine). Tout reste visible sans JS. */
+.js .hero-title .ch { opacity: 0; }
+.js .hero-title.is-shown .ch { opacity: 1; }
+
+.js .reveal { opacity: 0; transform: translateY(12px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
+.js .reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .hero-title .ch { opacity: 1; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .ticker-track { animation: none; width: auto; }
+  .ticker-group { flex-wrap: wrap; white-space: normal; padding-right: 0; padding-inline: var(--gutter); }
+  .ticker-group[aria-hidden="true"] { display: none; }
+  .btn, .site-nav a { transition: none; }
+}
+
+/* Transition entre pages (navigateurs compatibles, sinon navigation normale) */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--dur-medium); animation-timing-function: var(--ease-out); }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maquettes de refonte, bars de Lyon</title>
+<style>
+:root{--bg:#14161c;--surface:#1d2029;--text:#ece8df;--muted:#a7a396;--accent:#e08a3c;--border:#2c303c;--sp:8px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+main{max-width:880px;margin:0 auto;padding:calc(var(--sp)*8) calc(var(--sp)*2)}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 calc(var(--sp)*2);letter-spacing:-.01em}
+p.lead{color:var(--muted);max-width:60ch;margin:0 0 calc(var(--sp)*6)}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:calc(var(--sp)*2)}
+@media(min-width:700px){ul{grid-template-columns:1fr 1fr}}
+a.card{display:block;padding:calc(var(--sp)*3);background:var(--surface);border:1px solid var(--border);border-radius:6px;color:inherit;text-decoration:none;min-height:44px;transition:border-color .2s}
+a.card:hover,a.card:focus-visible{border-color:var(--accent);outline:none}
+a.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h2{margin:calc(var(--sp))0 var(--sp);font-size:24px}
+.meta{color:var(--muted);font-size:14px;margin:0}
+footer{margin-top:calc(var(--sp)*6);color:var(--muted);font-size:13px;border-top:1px solid var(--border);padding-top:calc(var(--sp)*2)}
+</style>
+</head>
+<body>
+<main>
+<h1>Maquettes de refonte, bars de Lyon</h1>
+<p class="lead">Deux propositions de sites web pour des bars récemment ouverts qui n'en ont pas encore. Elles s'inspirent de leur identité sur Instagram.</p>
+<ul>
+<li><a class="card" href="super7/"><span class="tag">Lyon 7e · lieu de vie et club</span><h2>Super7</h2><p class="meta">40 rue Saint-Jérôme. Typographie pixel orange, béton et briques de verre.</p></a></li>
+<li><a class="card" href="lelyons/"><span class="tag">Lyon 8e · bar afterwork</span><h2>Le Lyon's</h2><p class="meta">46 avenue Paul Santy. Bleu nuit, laiton et lion au trait.</p></a></li>
+</ul>
+<footer>Maquettes non officielles, réalisées par Olivier Ruminski. Contenus et marques © Super7 et © Le Lyon's. Les informations marquées [À CONFIRMER] ne sont pas vérifiées. Photos et logos officiels à fournir par les bars.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programmation | Super7, Lyon 7e (maquette)</title>
+<meta name="description" content="Programmation du Super7 à Lyon : exemple de semaine du jeudi au dimanche, avec le bar et le club. Maquette de refonte non officielle.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1a0808">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Programmation | Super7, Lyon 7e (maquette)">
+<meta property="og:description" content="Programmation du Super7 à Lyon : exemple de semaine du jeudi au dimanche, avec le bar et le club. Maquette de refonte non officielle.">
+<meta property="og:image" content="images/og.png">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/super7-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/motion.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Super7, accueil">
+      <img src="images/logo-s7.svg" width="40" height="40" alt="">
+      <span class="px">Super7</span>
+    </a>
+    <p class="clock px" id="clock" aria-hidden="true">17H/01H</p>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="programmation.html" aria-current="page">Programmation</a>
+      <a href="infos.html">Infos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="t-soiree concrete page-head" aria-labelledby="titre-prog">
+    <div class="wrap">
+      <h1 class="px" id="titre-prog">Programmation</h1>
+      <p class="lead">Du jeudi au dimanche, un artiste au bar et un au club, chaque soir.</p>
+    </div>
+  </section>
+  <section class="section t-soiree concrete" style="padding-top:var(--s-6)" aria-labelledby="titre-sem">
+    <div class="wrap">
+      <h2 class="px" id="titre-sem" style="font-size:var(--step-3);color:var(--accent);margin-bottom:var(--s-3)">Exemple de semaine</h2>
+      <p class="muted" style="margin-bottom:var(--s-5)">Mention d’origine : « à jour au 15 au 18 oct. ».</p>
+      <div class="filters" role="group" aria-label="Filtrer la programmation" hidden>
+        <button class="btn btn--ghost" type="button" data-filter="all" aria-pressed="true">Tout</button>
+        <button class="btn btn--ghost" type="button" data-filter="bar" aria-pressed="false">Bar</button>
+        <button class="btn btn--ghost" type="button" data-filter="club" aria-pressed="false">Club</button>
+      </div>
+      <ol class="days">
+  <li class="day reveal">
+    <h3 class="day-date px">Jeu <small>15 oct.</small></h3>
+    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Jean Granon &amp; Rhahis</p></div>
+    <div class="slot" data-slot="club"><span class="label">Club</span><p>Cornelius Doctor</p></div>
+  </li>
+  <li class="day reveal">
+    <h3 class="day-date px">Ven <small>16 oct.</small></h3>
+    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Léon</p></div>
+    <div class="slot" data-slot="club"><span class="label">Club</span><p>Roxane</p></div>
+  </li>
+  <li class="day reveal">
+    <h3 class="day-date px">Sam <small>17 oct.</small></h3>
+    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>6_Sour &amp; Menz</p></div>
+    <div class="slot" data-slot="club"><span class="label">Club</span><p>DJ Chuimix</p></div>
+  </li>
+  <li class="day reveal">
+    <h3 class="day-date px">Dim <small>18 oct.</small></h3>
+    <div class="slot" data-slot="bar"><span class="label">Bar</span><p>Je t’aime Rachel L</p></div>
+    <div class="slot" data-slot="club"><span class="label">Club</span><p>IMA:R</p></div>
+  </li>
+</ol>
+      <p class="note">Les prochaines semaines sont annoncées sur Instagram : <a href="https://www.instagram.com/super7_lyon/" rel="noopener" target="_blank">@super7_lyon<span class="sr-only"> (nouvel onglet)</span></a>. Calendrier complet sur ce site : <span class="tbc">[À CONFIRMER]</span></p>
+    </div>
+  </section>
+  <section class="section t-profonde" aria-labelledby="titre-entree">
+    <div class="wrap">
+      <h2 class="px" id="titre-entree" style="font-size:var(--step-3);color:var(--accent);margin-bottom:var(--s-4)">Entrée et billetterie</h2>
+      <dl class="faq">
+        <dt>Tarif d’entrée</dt><dd><span class="tbc">[À CONFIRMER]</span></dd>
+        <dt>Billetterie ou liste</dt><dd><span class="tbc">[À CONFIRMER]</span> Aucun outil de réservation n’est supposé dans cette maquette.</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+<footer class="site-footer t-profonde">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="px" style="font-size:var(--step-2);color:var(--orange)">Super7</p>
+        <p>40 rue Saint-Jérôme, 69007 Lyon<br>Jeudi à dimanche, 17h à 01h pour le moment</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <ul>
+          <li><a href="programmation.html">Programmation</a></li>
+          <li><a href="infos.html">Infos pratiques</a></li>
+          <li><a href="https://www.instagram.com/super7_lyon/" rel="noopener">Instagram @super7_lyon</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="legal">Maquette de refonte non officielle, réalisée par Olivier Ruminski. Contenus © Super7.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
